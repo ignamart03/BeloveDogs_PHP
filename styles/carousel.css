@@ -1,8 +1,37 @@
-.carrusel img {
-    display: none;
-  }
-  
-  .carrusel img.imagen-activa {
-    display: block;
-  }
-  
+body, html {
+  height: 100%;
+}
+
+.carousel-full-height {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  left: 0;
+}
+
+.carousel-1-item {
+  height: 100vh;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+}
+
+
+.carousel-half-height {
+  height: 50vh; /* Ocupará solo la mitad del alto de la pantalla */
+  width: 50%; /* Ocupará la mitad de ancho de la pantalla */
+  position: fixed;
+  right: 0; /* Pegado al lado derecho */
+  top: 0; /* Pegado a la parte superior */
+}
+
+.carousel-2-item {
+  height: 50vh; /* El mismo alto que el contenedor del carrusel */
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+}
