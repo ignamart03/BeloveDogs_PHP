@@ -1,0 +1,36 @@
+.bodyQ {
+    display: flex;
+}
+
+#textoQ {
+    flex: 1;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 250%;
+}
+
+#namesD {
+    font-size: 200%;
+}
+
+p {
+    font-size: 150%;
+}
+
+#imagenes {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-right: 10%;
+    margin-top: 10%;
+  }
+
+.imagen {
+    margin-bottom: 20px;
+  }
+
+.imagen img {
+    max-width: 500px;
+  }
