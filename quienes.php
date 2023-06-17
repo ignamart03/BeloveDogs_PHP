@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <!-- Bootstrap CSS -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/quienes.css">
@@ -52,37 +53,37 @@
         <div id="textoQ">
             <h1>Quienes Somos</h1>
             <p>
-                Este proyecto está formado por tres estudiantes de segundo año de desarrollo web en Madrid. 
+                Este proyecto está formado por tres estudiantes de segundo año de desarrollo web en Madrid.
                 Cada uno de los miembros del equipo aporta todo su esfuerzo e ideas con el fin de llevar esta idea de negocio a que se convierta en una realidad. <br>
                 Somos:
-                <ul>
-                    <li><i id="namesD">Jorge García </i>
-                        <p>
-                            Me introduje en el mundo de la informática y el desarrollo web influenciado por mis familiares. 
-                            Estudié Ingeniería Informática en la Universidad Rey Juan Carlos, pero decidí dar un enfoque más orientado al ámbito laboral a mis estudios, por lo que opté por el Grado Superior de Desarrollo de Aplicaciones Web. 
-                            Apasionado de los animales, puedo aportar varias ideas y puntos de vista interesantes para el desarrollo de nuestra idea. 
-                            Cuento con un certificado C2  de inglés, por lo que no habrá ningún problema a la hora de traducir nuestra aplicación para que pueda disfrutarla un mayor número de personas.
-                        </p>
-                    </li>
-                    <li><i id="namesD">Ignacio Martinez </i>
-                        <p>
-                        Desde siempre he tenido mucha curiosidad por el campo de la tecnología y la informática. 
-                        Este interés me dio la motivación suficiente para estudiar un grado superior en Desarrollo de Aplicaciones Web. 
-                        Soy especialmente bueno en el ámbito del “troubleshooting” y con un gran “sens” de equipo. 
-                        Amante de las mascotas desde muy niño, estoy entusiasmado por formar parte de un proyecto así, y poder ayudar a muchos animales a nivel internacional. 
-                        Gracias a mi certificado de inglés C1 de Cambridge English, no tendremos muchos problemas a la hora de expandir nuestro negocio. 
-                        </p>
-                    </li>
-                    <li><i id="namesD">Daniel Villas </i>
-                        <p>
-                        Soy disciplinado y comprometido con el equipo. Me gusta que haya buen ambiente en el trabajo. 
-                        Soy creativo y me gustan las nuevas experiencias. Siempre me ha gustado la informática y hace tiempo decidí que en mi futuro me dedicaría a ella. 
-                        Los animales me gustan desde pequeño, de hecho, tengo dos gatos. 
-                        Me desenvuelvo fácilmente en inglés ya que llevo estudiando el idioma desde pequeño. 
+            <ul>
+                <li><i id="namesD">Jorge García </i>
+                    <p>
+                        Me introduje en el mundo de la informática y el desarrollo web influenciado por mis familiares.
+                        Estudié Ingeniería Informática en la Universidad Rey Juan Carlos, pero decidí dar un enfoque más orientado al ámbito laboral a mis estudios, por lo que opté por el Grado Superior de Desarrollo de Aplicaciones Web.
+                        Apasionado de los animales, puedo aportar varias ideas y puntos de vista interesantes para el desarrollo de nuestra idea.
+                        Cuento con un certificado C2 de inglés, por lo que no habrá ningún problema a la hora de traducir nuestra aplicación para que pueda disfrutarla un mayor número de personas.
+                    </p>
+                </li>
+                <li><i id="namesD">Ignacio Martinez </i>
+                    <p>
+                        Desde siempre he tenido mucha curiosidad por el campo de la tecnología y la informática.
+                        Este interés me dio la motivación suficiente para estudiar un grado superior en Desarrollo de Aplicaciones Web.
+                        Soy especialmente bueno en el ámbito del “troubleshooting” y con un gran “sens” de equipo.
+                        Amante de las mascotas desde muy niño, estoy entusiasmado por formar parte de un proyecto así, y poder ayudar a muchos animales a nivel internacional.
+                        Gracias a mi certificado de inglés C1 de Cambridge English, no tendremos muchos problemas a la hora de expandir nuestro negocio.
+                    </p>
+                </li>
+                <li><i id="namesD">Daniel Villas </i>
+                    <p>
+                        Soy disciplinado y comprometido con el equipo. Me gusta que haya buen ambiente en el trabajo.
+                        Soy creativo y me gustan las nuevas experiencias. Siempre me ha gustado la informática y hace tiempo decidí que en mi futuro me dedicaría a ella.
+                        Los animales me gustan desde pequeño, de hecho, tengo dos gatos.
+                        Me desenvuelvo fácilmente en inglés ya que llevo estudiando el idioma desde pequeño.
                         Es una idea innovadora y con gran potencial y estoy muy motivado para desarrollarla.
-                        </p>
-                    </li>
-                </ul>
+                    </p>
+                </li>
+            </ul>
             </p>
             <br>
             <h1> Qué es BeloveDogs </h1>
@@ -96,7 +97,7 @@
                 En resumen, el proyecto de final de grado desarrollado en Angular es un portal web de adopción de animales que también incluye una tienda online de productos para animales, eventos y una página de contacto para interactuar con otros usuarios. La aplicación móvil desarrollada con Android Studio ofrece una experiencia móvil complementaria, brindando acceso a las mismas funcionalidades del portal web y aprovechando las características específicas de los dispositivos móviles. Gracias al dinamismo de nuestra aplicación, no habría ninguna dificultad a la hora de aplicarla al mundo real.
                 <br><br><br><br><br>
                 El bienestar y la protección de los animales son temas de gran importancia en la sociedad actual. Sin embargo, la problemática del abandono y la falta de adopción de animales domésticos persiste, generando graves consecuencias para ellos.
-                En este contexto, se plantea el desarrollo de un Portal de Adopción de Animales como proyecto de final de grado, con el objetivo de promover la adopción responsable y brindar un espacio en línea que facilite la búsqueda y conexión entre animales en situación de abandono y posibles adoptantes. 
+                En este contexto, se plantea el desarrollo de un Portal de Adopción de Animales como proyecto de final de grado, con el objetivo de promover la adopción responsable y brindar un espacio en línea que facilite la búsqueda y conexión entre animales en situación de abandono y posibles adoptantes.
                 Una de las principales justificaciones de este proyecto es la reducción del abandono animal. El abandono de animales domésticos es un problema grave que conlleva a su sufrimiento y a la sobrepoblación en refugios y centros de rescate. El portal de adopción permitirá difundir información sobre animales disponibles para adopción, sensibilizando a la población y fomentando la adopción responsable como alternativa al abandono.
                 Además, el desarrollo de este portal contribuirá a mejorar el bienestar animal. Los animales que se encuentran en situación de abandono sufren condiciones precarias, maltrato y falta de cuidados adecuados. Al promover la adopción a través del portal, se les brindará la oportunidad de encontrar un hogar amoroso y recibir los cuidados necesarios para su bienestar.
                 Otra justificación importante es la facilitación de la adopción responsable. El proceso de adopción de un animal puede ser complicado y requiere de tiempo y esfuerzo por parte de los interesados. El portal de adopción proporcionará un medio centralizado para que los posibles adoptantes accedan a información detallada sobre los animales disponibles, sus características, necesidades especiales y requisitos de adopción. Esto facilitará la búsqueda y selección de mascotas adecuadas a las preferencias y circunstancias de cada adoptante, promoviendo una adopción más responsable y duradera.
@@ -138,9 +139,9 @@
                 <img src="images/juan_selfie.jpg" alt="Mascota 5">
                 <p id="img_txt">Mira que selfie más chulo se ha hecho Juan</p>
             </div>
-    </div>
+        </div>
 
-  </div>
+    </div>
 </body>
 
 </html>
