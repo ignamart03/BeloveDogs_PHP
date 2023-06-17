@@ -48,7 +48,7 @@
             <div class="col-sm-8">
                 <h2 class="mt-5 text-uppercase">Welcome</h2>
                 <h5 class="text-uppercase">Please, log in to continue</h5>
-                <form action="profile.php" method="post">
+                <form action="perfil.php" method="post">
                     <div class="form-group">
                         <label for="usuario" class="text-uppercase">Username:</label>
                         <input type="text" id="usuario" name="username" value="" class="form-control">

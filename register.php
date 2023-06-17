@@ -204,7 +204,7 @@ if (isset($_POST["Submit"])) {
     //... if can make the user, alert it and redirect to user page. 
     else if (mysqli_query($conn, $sql)) {
         $_SESSION['sesion'] = $username;
-        echo "Usuario registrado con exito: $username);!";
+        echo "Usuario registrado con exito: $nombre);!" . "<script> window.location='perfil.php' </script>";
     } else {
         echo "Error: " . $sql . "<br>" . mysql_error($conn);
     }
