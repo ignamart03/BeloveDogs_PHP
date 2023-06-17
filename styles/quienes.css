@@ -41,7 +41,6 @@ p {
     -webkit-transform: scale(1.2);
     -o-transform: scale(1.2);
     transform: scale(1.2);
-    
     border-style: double;
     border-color: #e84855;
 }

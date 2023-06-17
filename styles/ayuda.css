@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    text-decoration: underline solid #e84855;
+}
+
+.caja {
+    border: 1px solid black;
+    padding: 10px;
+    
+    cursor: pointer;
+    font-size: 150%;
+    background-color: #e84855;
+}
+  
+.dropdown {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e84855;
+}
+  
+.caja.clicked .dropdown {
+    display: block;
+}
+
+.ayudaS {
+    display: flex;
+    font-size: 180%;
+}
