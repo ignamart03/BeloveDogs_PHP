@@ -50,3 +50,7 @@ a.nav-button {
 a.mat-button:hover {
     color: #007bff;
 }
+
+#register {
+    color: black;
+}

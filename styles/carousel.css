@@ -1,0 +1,8 @@
+.carrusel img {
+    display: none;
+  }
+  
+  .carrusel img.imagen-activa {
+    display: block;
+  }
+  
