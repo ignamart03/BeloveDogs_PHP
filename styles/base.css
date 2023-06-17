@@ -7,10 +7,6 @@
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-a {
-    color: white;
-}
-
 .nav-list {
     display: flex;
     list-style: none;
@@ -51,6 +47,7 @@ a.mat-button:hover {
     color: #007bff;
 }
 
-#register {
+.register-link {
     color: black;
+    background-color: black;
 }
