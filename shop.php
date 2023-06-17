@@ -70,12 +70,32 @@
                 'https://www.bigberthaoriginal.es/products/la-cama-del-gato-cama-para-gatos-pompon-vison?currency=EUR&utm_medium=cpc&utm_source=google&utm_campaign=Google+Shopping&gclid=CjwKCAjws7WkBhBFEiwAIi16877oemGl6W-sDXTC0h4PcFK_jWRDjGInzddj9FYSLgGBLULRVV10axoCtcMQAvD_BwE&variant=15155388547115'
             ];
 
+            // Array de nombres de artículos
+            $nombres = [
+                'Piscina para perros',
+                'Arnés K9',
+                'Fluffy Erizo',
+                'Fluffy Cocodrilo',
+                'Malta Omega 3 y 6',
+                'Nova Clean Beta',
+                'Ultima Esterilizados (Pollo)',
+                'Kong Snake Teaser',
+                'Transportín para coche',
+                'Antiparásitos Vectra',
+                'Salvaje (Pollo)',
+                'True Origins (Salmón)',
+                'Seresto Antiparásitos',
+                'Rascador Hamiform',
+                'Rascador Fred & Rita',
+                'La Cama Del Gato'
+            ];
+
             for ($i = 1; $i <= 16; $i++): ?>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="card">
-                        <img src="images/<?php echo $i; ?>.jpg" class="card-img-top" alt="Imagen <?php echo $i; ?>">
+                        <img src="images/<?php echo $i; ?>.jpg" class="card-img-top image-container" alt="Imagen <?php echo $i; ?>">
                         <div class="card-body">
-                            <h5 class="card-title">Imagen <?php echo $i; ?></h5>
+                            <h5 class="card-title"> <?php echo $nombres[$i - 1]; ?></h5>
                             <a href="<?php echo $enlaces[$i - 1]; ?>" target="_blank" class="btn btn-primary">Ir a producto</a>
                         </div>
                     </div>
