@@ -122,6 +122,10 @@
             <div class="imagen">
                 <img src="images/juan.jpg" alt="Mascota 4">
             </div>
+            <br><br><br><br><br>
+            <div class="imagen">
+                <img src="images/juan_selfie.jpg" alt="Mascota 5">
+            </div>
     </div>
 
   </div>
