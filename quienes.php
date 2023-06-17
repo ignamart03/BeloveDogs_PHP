@@ -51,7 +51,7 @@
 
     <div class="bodyQ">
         <div id="textoQ">
-            <h1>Quienes Somos</h1>
+            <h1>Quiénes Somos</h1>
             <p>
                 Este proyecto está formado por tres estudiantes de segundo año de desarrollo web en Madrid.
                 Cada uno de los miembros del equipo aporta todo su esfuerzo e ideas con el fin de llevar esta idea de negocio a que se convierta en una realidad. <br>
@@ -65,7 +65,7 @@
                         Cuento con un certificado C2 de inglés, por lo que no habrá ningún problema a la hora de traducir nuestra aplicación para que pueda disfrutarla un mayor número de personas.
                     </p>
                 </li>
-                <li><i id="namesD">Ignacio Martinez </i>
+                <li><i id="namesD">Ignacio Martínez </i>
                     <p>
                         Desde siempre he tenido mucha curiosidad por el campo de la tecnología y la informática.
                         Este interés me dio la motivación suficiente para estudiar un grado superior en Desarrollo de Aplicaciones Web.
