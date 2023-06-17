@@ -62,8 +62,7 @@ session_start();
     $usernameErr = $emailErr = $genderErr = $passwordErr = $websiteErr = "";
     $name = $rpassword = $nameErr = "";
 
-    $sql = "SELECT username,password,email,name from USERS
-        WHERE ('" . $_POST["username"] . "'=username AND '" . $_POST["password"] . "'=password)";
+    $sql = "SELECT `username`, `password_hash`, `email`, `nombre_completo` FROM USERS WHERE ('" . $_POST["username"] . "'= username AND '" . $_POST["password"] . "'= password_hash)";
     //    echo $sql;
     $result = mysqli_query($conn, $sql);
 
