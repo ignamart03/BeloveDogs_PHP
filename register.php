@@ -61,7 +61,7 @@
                         $usernameErr = "Username is required";
                     } else {
                         $username = test_input($_POST["username"]);
-                        if (!preg_match('/^[a-zA-Z]{6,10}$/', $username)) {
+                        if (!preg_match('/^[a-zA-Z]{6,20}$/', $username)) {
                             $usernameErr = "Only letters allowed from 6 to 10 characters";
                         }
 
@@ -212,9 +212,9 @@ if (isset($_POST["Submit"])) {
         echo "Error: " . $sql . "<br>" . mysql_error($conn);
     }
 
-    if (!$hayErrores) {
-        header("Location: home.php");
-        exit();
+    if (isset($_POST["name"])) {
+
+        echo "<script>window.location='home.php' </script>";
     }
 }
 ?>
