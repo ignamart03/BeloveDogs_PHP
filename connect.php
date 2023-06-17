@@ -1,9 +1,9 @@
 <?php
 
 	define('DBHOST', '127.0.0.1');
-	define('DBUSER', 'root');
-	define('DBPASS', 'webuser');
-	define('DBNAME', 'jardineria');
+	define('DBUSER', 'belovedogs');
+	define('DBPASS', 'belovedogs');
+	define('DBNAME', 'belovedogs');
 	
 	$conn = mysqli_connect(DBHOST,DBUSER,DBPASS,DBNAME);
 
