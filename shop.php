@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <!-- Bootstrap CSS -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
 </head>
@@ -49,7 +50,7 @@
         <h2 class="mb-4">Tienda</h2>
         <div class="row">
             <!-- Bucle for para simplificar la generación de las imágenes en la página -->
-            <?php 
+            <?php
             // Array de enlaces
             $enlaces = [
                 'https://www.kiwoko.com/perros/accesorios-para-perros/juguetes-para-perros/summer-vibes-piscina-para-perros/SMV58901_M.html',
@@ -90,7 +91,7 @@
                 'La Cama Del Gato'
             ];
 
-            for ($i = 1; $i <= 16; $i++): ?>
+            for ($i = 1; $i <= 16; $i++) : ?>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="card">
                         <img src="images/<?php echo $i; ?>.jpg" class="card-img-top image-container" alt="Imagen <?php echo $i; ?>">

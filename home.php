@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   <!-- Bootstrap CSS -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/carousel.css">
@@ -62,23 +63,23 @@
             <div class="carousel-inner">
               <div class="carousel-item active carousel-1-item">
                 <img src="images/perroton.jpg" class="d-block w-100" alt="Imagen 1">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-block">
                   <h5>Perrotón Madrid</h5>
                   <p>Entradas Perrotón Madrid 2023 Nicka Run en Madrid</p>
                   <a href="https://www.elcorteingles.es/entradas/deporte/entradas-perroton-madrid-2023-madrid/" target="_blank">Ver más</a>
                 </div>
               </div>
               <div class="carousel-item carousel-1-item">
-                <img src="images/taller_obediencia.jpg" class="d-block w-100" alt="Imagen 2">
-                <div class="carousel-caption d-none d-md-block">
+                <img src="images/taller_obediencia4.jpg" class="d-block w-100" alt="Imagen 2">
+                <div class="carousel-caption d-block">
                   <h5>Taller de obediencia canina</h5>
                   <p>Taller de obediencia y educación canina en Madrid</p>
                   <a href="https://www.facebook.com/events/1973777872985160/1973793782983569/?active_tab=about" target="_blank">Ver más</a>
                 </div>
               </div>
               <div class="carousel-item carousel-1-item">
-                <img src="images/curso_bienestar.jpg" class="d-block w-100" alt="Imagen 3">
-                <div class="carousel-caption d-none d-md-block">
+                <img src="images/bienestar_animal2.jpg" class="d-block w-100" alt="Imagen 3">
+                <div class="carousel-caption d-block">
                   <h5>Bienestar animal curso</h5>
                   <p>Curso Bienestar Animal en el Transporte online + examen presencial</p>
                   <a href="https://inalocal.com/convocatorias/etiqueta/bienestar-animal/" target="_blank">Ver más</a>
@@ -86,7 +87,7 @@
               </div>
               <div class="carousel-item carousel-1-item">
                 <img src="images/animales_salvajes.jpg" class="d-block w-100" alt="Imagen 4">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-block">
                   <h5>Entrenamiento de animales salvajes</h5>
                   <p>Especializacion entreamiento avanzado para cuidados veterinarios de animales salvajes</p>
                   <a href="https://www.emagister.com/especializacion-entrenamiento-avanzado-para-cuidados-veterinarios-animales-salvajes-cursos-3461075.htm" target="_blank">Ver más</a>
@@ -94,9 +95,9 @@
               </div>
               <div class="carousel-item carousel-1-item">
                 <img src="images/Zolopotrokeando.jpg" class="d-block w-100" alt="Imagen 5">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-block">
                   <h5>Zolopotrokeando</h5>
-                  <p>Nuevo espectáculo infantil y familiar para fiestas</p>
+                  <p>Nuevo espectáculo infantil y familiar para fiestas. Un espectáculo en el que tanto niños como pequeños disfrutarán de las canciones y coreografías que bailarán nuestras mascotas junto a Tina.</p>
                   <a href="https://zolopotrokoteatro.com/events/zolopotrokeando-862-584-101-914-192-758-644-513-301-810-887/" target="_blank">Ver más</a>
                 </div>
               </div>
@@ -125,7 +126,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active carousel-2-item">
           <img src="images/el_refugio.jpg" class="d-block w-100" alt="Imagen 1">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-block">
             <h5>EL REFUGIO, MADRID</h5>
             <p>El Refugio nació en 1996 como una organización especializada en la ayuda a perros y gatos abandonados y/o maltratados. A día de hoy, cuentan con un precioso
               proyecto llamado Edén, al que cualquier persona se puede apuntar de manera totalmente gratuita para garantizar que sus mascotas tengan un hogar seguro en caso de fallecimiento.
@@ -134,8 +135,8 @@
           </div>
         </div>
         <div class="carousel-item carousel-2-item">
-          <img src="images/image2.jpg" class="d-block w-100" alt="Imagen 2">
-          <div class="carousel-caption d-none d-md-block">
+          <img src="images/helpguau2.2.jpg" class="d-block w-100" alt="Imagen 2">
+          <div class="carousel-caption d-block">
             <h5>HELP GUAU, BARCELONA</h5>
             <p>Ubicada a pocos kilómetros de Barcelona, la protectora Help Guau ofrece distintos métodos de adopción, haciendo distinciones entre perros senior, 
               perros potencialmente peligrosos y una adopción bonificada para animales que por un motivo u otro requieran de un trato diferente. 
@@ -144,11 +145,11 @@
           </div>
         </div>
         <div class="carousel-item carousel-2-item">
-          <img src="images/image3.jpg" class="d-block w-100" alt="Imagen 3">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Título 3</h5>
-            <p>Descripción 3</p>
-            <a href="" target="_blank">Ver más</a>
+          <img src="images/propatas.jpg" class="d-block w-100" alt="Imagen 3">
+          <div class="carousel-caption d-block">
+            <h5>PROPATAS PROTECTORA, VALLADOLID</h5>
+            <p>Esta protectora de animales de Valladolid se encarga de cuidar a los perros que han sido maltratados y a aquellos en riesgo de ser sacrificados.</p>
+            <a href="https://www.instagram.com/propatas.oficial/?utm_source=ig_embed&ig_rid=49b397de-7b4f-4b04-ba64-7d6c1e46a195" target="_blank">Ver más</a>
           </div>
         </div>
       </div>
