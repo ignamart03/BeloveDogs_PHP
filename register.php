@@ -156,7 +156,7 @@
                     <input type="text" id="address" name="address" value="<?php echo $address; ?>"><br>
 
                     <label for="phone">Teléfono:</label><br>
-                    <input type="text" id="phone" name="phone" value="<?php echo $phone; ?>"><br>
+                    <input type="number" id="phone" name="phone" value="<?php echo $phone; ?>" max="10"><br>
 
                     <label for="password">Contraseña:</label><br>
                     <input type="password" id="password" name="password"><br>
