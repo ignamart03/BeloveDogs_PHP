@@ -27,7 +27,9 @@
           <a class="nav-link" href="adopta.php">Adopta</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="login.php">Login</a>
+          <?php if (!isset($_SESSION['usuario'])) : ?>
+            <a class="nav-link" href="login.php">Login</a>
+          <?php endif; ?>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="shop.php">Tienda</a>
@@ -44,10 +46,12 @@
         <li class="nav-item">
           <a class="nav-link" href="perfil.php">Perfil</a>
         </li>
+
       </ul>
     </div>
   </nav>
 
+  <!-- Primer carrusel sobre eventos de animales -->
   <div class="carousel-container">
     <div class="container">
       <div class="row justify-content-center">
@@ -116,6 +120,7 @@
     </div>
   </div>
 
+  <!-- Segundo carrusel sobre centros de adopción -->
   <div class="col-sm-6" style="position: absolute; right: 0; top: 0;"> <!-- Está posicionado en la esquina superior derecha -->
     <div id="carouselExampleCaptions2" class="carousel slide carousel-half-height" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -138,8 +143,8 @@
           <img src="images/helpguau2.2.jpg" class="d-block w-100" alt="Imagen 2">
           <div class="carousel-caption d-block">
             <h5>HELP GUAU, BARCELONA</h5>
-            <p>Ubicada a pocos kilómetros de Barcelona, la protectora Help Guau ofrece distintos métodos de adopción, haciendo distinciones entre perros senior, 
-              perros potencialmente peligrosos y una adopción bonificada para animales que por un motivo u otro requieran de un trato diferente. 
+            <p>Ubicada a pocos kilómetros de Barcelona, la protectora Help Guau ofrece distintos métodos de adopción, haciendo distinciones entre perros senior,
+              perros potencialmente peligrosos y una adopción bonificada para animales que por un motivo u otro requieran de un trato diferente.
             </p>
             <a href="https://www.instagram.com/helpguau/?utm_source=ig_embed&ig_rid=8f77b3fb-0840-4560-9cb2-d5022c3237c5" target="_blank">Ver más</a>
           </div>
@@ -163,6 +168,32 @@
       </a>
     </div>
   </div>
+
+  <!-- Cajas para las tiendas de artículos de mascotas -->
+  <div class="container">
+    <div class="row">
+      <div class="storeDiv" style="position: fixed; bottom: 0; right: 25%;">
+        <h2>Las mejores tiendas de Madrid</h2>
+        <p>Nombre de la Tienda 1</p>
+        <a href="{Enlace de la tienda 1}">Visita nuestra tienda</a>
+        <div class="map">
+          <iframe src="{Enlace de Google Maps para la Tienda 1}" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+      <div class="storeDiv" style="position: fixed; bottom: 0; right: 0;">
+        <h2>Las mejores tiendas de Madrid</h2>
+        <p>Nombre de la Tienda 2</p>
+        <a href="{Enlace de la tienda 2}">Visita nuestra tienda</a>
+        <div class="map">
+          <iframe src="{Enlace de Google Maps para la Tienda 2}" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
 
 
 
