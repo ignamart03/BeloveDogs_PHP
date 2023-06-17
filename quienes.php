@@ -88,13 +88,13 @@
             <h1> Qué es BeloveDogs </h1>
             <p>
                 Hoy en día, debido a la pandemia, se ha perdido mucho el contacto entre dueños de mascotas. Os presentamos nuestra idea, que revolucionará el mundo de los animales de compañía. BeloveDogs. El proyecto de final de grado es un portal web de adopción de animales que incluye una tienda online de productos para animales, eventos y una página para contactar con otros usuarios. Además, se ha desarrollado una aplicación móvil complementaria utilizando Android Studio.
-                El portal web desarrollado en Angular proporciona una interfaz intuitiva y fácil de usar para los usuarios interesados en adoptar animales. La página principal muestra una lista de animales disponibles para su adopción, donde se muestran imágenes, descripciones y detalles relevantes de cada animal. Los usuarios pueden buscar animales específicos mediante filtros, como especie, raza, edad, etc. También pueden ver perfiles detallados de los animales, que incluyen información adicional como historial médico y requisitos de adopción.
+                El portal web desarrollado en PHP proporciona una interfaz intuitiva y fácil de usar para los usuarios interesados en adoptar animales. La página principal muestra una lista de animales disponibles para su adopción, donde se muestran imágenes, descripciones y detalles relevantes de cada animal. Los usuarios pueden buscar animales específicos mediante filtros, como especie, raza, edad, etc. También pueden ver perfiles detallados de los animales, que incluyen información adicional como historial médico y requisitos de adopción.
                 Nuestro proyecto también cuenta con una tienda online de productos para animales, donde los usuarios pueden comprar alimentos, juguetes, camas y otros productos relacionados con mascotas. Se implementa un carrito de compras y un proceso de pago seguro para que los usuarios puedan realizar sus compras de manera conveniente.
                 Además, incluye una sección de eventos, donde se muestran actividades relacionadas con el cuidado de animales, charlas educativas y jornadas de adopción. Los usuarios pueden explorar los eventos próximos, obtener detalles sobre su ubicación, fecha y hora, y registrarse para asistir a ellos.
                 El componente de interacción social se encuentra en la página de contacto, donde los usuarios pueden registrarse y conectarse con otros amantes de los animales. Pueden compartir experiencias, consejos y preguntas relacionadas con la adopción y el cuidado de animales. También se ofrece un sistema de mensajería interna para facilitar la comunicación entre los usuarios.
                 La aplicación móvil desarrollada con Android Studio complementa el portal web y ofrece una experiencia optimizada para dispositivos móviles. Los usuarios pueden acceder a las mismas funcionalidades que se encuentran en el portal web, como buscar animales para adopción, comprar productos para animales en la tienda online, explorar eventos y conectarse con otros usuarios. Además, la aplicación móvil puede aprovechar las características específicas de los dispositivos móviles, como la geolocalización, para proporcionar información relevante sobre eventos y tiendas de animales cercanas.
                 En resumen, el proyecto de final de grado desarrollado en Angular es un portal web de adopción de animales que también incluye una tienda online de productos para animales, eventos y una página de contacto para interactuar con otros usuarios. La aplicación móvil desarrollada con Android Studio ofrece una experiencia móvil complementaria, brindando acceso a las mismas funcionalidades del portal web y aprovechando las características específicas de los dispositivos móviles. Gracias al dinamismo de nuestra aplicación, no habría ninguna dificultad a la hora de aplicarla al mundo real.
-
+                <br><br><br><br><br>
                 El bienestar y la protección de los animales son temas de gran importancia en la sociedad actual. Sin embargo, la problemática del abandono y la falta de adopción de animales domésticos persiste, generando graves consecuencias para ellos.
                 En este contexto, se plantea el desarrollo de un Portal de Adopción de Animales como proyecto de final de grado, con el objetivo de promover la adopción responsable y brindar un espacio en línea que facilite la búsqueda y conexión entre animales en situación de abandono y posibles adoptantes. 
                 Una de las principales justificaciones de este proyecto es la reducción del abandono animal. El abandono de animales domésticos es un problema grave que conlleva a su sufrimiento y a la sobrepoblación en refugios y centros de rescate. El portal de adopción permitirá difundir información sobre animales disponibles para adopción, sensibilizando a la población y fomentando la adopción responsable como alternativa al abandono.
@@ -104,27 +104,39 @@
                 Además de facilitar la adopción, el portal desempeñará un papel crucial en la concienciación y educación sobre la responsabilidad que conlleva tener una mascota. Se proporcionará información sobre la tenencia responsable, cuidados básicos, esterilización, vacunación y otros aspectos relevantes para garantizar el bienestar y la salud de los animales adoptados.
                 En conclusión, el desarrollo de un Portal de Adopción de Animales como proyecto de final de grado tiene una relevancia significativa en la actualidad, dado el aumento de la problemática del abandono animal. Mediante la promoción de la adopción responsable y el fomento de la conciencia sobre el bienestar animal, el portal busca mejorar la calidad de vida de los animales en situación de abandono y brindar a las personas la oportunidad de encontrar una compañía amorosa y fiel.
             </p>
+            <br>
+            <h1> ¿Y los amigos tan graciosos de las fotos?¿Quienes son? </h1>
+            <p>
+                Pues ni más ni menos que nuestras adorables mascotas. Los dos gatetes dormilones son Dumbo y Nieve, los amigos de Daniel.
+                Al que tanto le gusta tomar el sol es Misu, colega de Jorge.
+                Y el modelo de muebles de jardín tan bonito es JUAN, el mejor amigo de Ignacio. Y sí, es un perro modelo, nunca mejor dicho.
+            </p>
         </div>
 
         <div id="imagenes">
             <div class="imagen">
                 <img src="images/mascota1.jpg" alt="Mascota 1">
+                <p id="img_txt">Dumbo y Nieve durmiendo en un día de invierno</p>
             </div>
             <br><br><br><br><br>
             <div class="imagen">
                 <img src="images/mascota2.jpg" alt="Mascota 2">
+                <p id="img_txt"> Dumbo y Nieve posando para la foto 📸</p>
             </div>
             <br><br><br><br><br>
             <div class="imagen">
                 <img src="images/mascota3.jpg" alt="Mascota 3">
+                <p id="img_txt">Como le gusta a Misu tomar el solecito e.e</p>
             </div>
             <br><br><br><br><br>
             <div class="imagen">
                 <img src="images/juan.jpg" alt="Mascota 4">
+                <p id="img_txt">Juan posando para una revista de decoración</p>
             </div>
             <br><br><br><br><br>
             <div class="imagen">
                 <img src="images/juan_selfie.jpg" alt="Mascota 5">
+                <p id="img_txt">Mira que selfie más chulo se ha hecho Juan</p>
             </div>
     </div>
 

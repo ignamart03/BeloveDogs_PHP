@@ -8,11 +8,11 @@
 }
 
 h1 {
-    font-size: 250%;
+    font-size: 200%;
 }
 
 #namesD {
-    font-size: 200%;
+    font-size: 170%;
 }
 
 p {
@@ -25,12 +25,44 @@ p {
     padding: 20px;
     margin-right: 5%;
     margin-top: 5%;
-  }
+}
 
 .imagen {
     margin-bottom: 20px;
-  }
+}
 
 .imagen img {
     max-width: 500px;
-  }
+}
+
+.imagen:hover {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    
+    border-style: double;
+    border-color: #e84855;
+}
+
+.imagen:hover #img_txt,
+.imagen:focus #img_txt {
+    display: block;
+}
+
+#img_txt {
+    display: none;
+    font-size: 35px;
+    color: #e84855;
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+}
