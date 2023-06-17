@@ -110,13 +110,17 @@
             <div class="imagen">
                 <img src="images/mascota1.jpg" alt="Mascota 1">
             </div>
-
+            <br><br><br><br><br>
             <div class="imagen">
                 <img src="images/mascota2.jpg" alt="Mascota 2">
             </div>
-
+            <br><br><br><br><br>
             <div class="imagen">
                 <img src="images/mascota3.jpg" alt="Mascota 3">
+            </div>
+            <br><br><br><br><br>
+            <div class="imagen">
+                <img src="images/juan.jpg" alt="Mascota 4">
             </div>
     </div>
 
