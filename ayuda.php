@@ -5,37 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="base.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+
 </head>
 
 <body>
-    <nav class="navbar">
-        <a href="home.php" class="nav-button" alt="Home">
-            <div style="margin-left: 1.5rem; margin-right: 1.5rem;">
-                <img src="favicon.ico">
-            </div>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="home.php">
+            <img src="favicon.ico" alt="Home" width="30" height="30">
         </a>
-        <ul class="nav-list">
-            <li class="nav-item">
-                <a href="adopta.php" class="nav-button">Adopta</a>
-            </li>
-            <li class="nav-item">
-                <a href="login.php" class="nav-button">Login</a>
-            </li>
-            <li class="nav-item">
-                <a href="shop.php" class="nav-button">Tienda</a>
-            </li>
-            <li class="nav-item">
-                <a href="quienes.php" class="nav-button">Quienes Somos</a>
-            </li>
-            <li class="nav-item">
-                <a href="ayuda.php" class="nav-button">Ayuda</a>
-            </li>
-            <li class="nav-item">
-                <a href="otros.php" class="nav-button">Conoce Otros Dueños</a>
-            </li>
-        </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="adopta.php">Adopta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.php">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.php">Tienda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quienes.php">Quienes Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ayuda.php">Ayuda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="otros.php">Conoce Otros Dueños</a>
+                </li>
+            </ul>
+        </div>
     </nav>
+
+    <p>ayuda</p>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
