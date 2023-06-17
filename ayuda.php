@@ -61,8 +61,9 @@
     <h1>Preguntas Frecuentes</h1>
     <br><br>
 
+<div class="allBoxes">
   <div class="caja" onclick="toggleDropdown(this)">
-    <p>¿Qué es esta web?</p>
+    <p class="titulo"><b>¿Qué es esta web?</b></p>
         <div class="dropdown">
             <p>
                 BeloveDogs ofrece a los usuarios una plataforma en la cual encontar varios servicios sobre mascotas. Entre ellos se encuentran
@@ -73,7 +74,7 @@
   </div>
   
   <div class="caja" onclick="toggleDropdown(this)">
-    <p>¿Cómo funciona?</p>
+    <p class="titulo"><b>¿Cómo funciona?</b></p>
         <div class="dropdown">
             <p>
                 En BeloveDogs encontraras, por ejemplo, los artículos más destacados y mejor valorados de distintas webs de compra.
@@ -84,7 +85,7 @@
   </div>
 
   <div class="caja" onclick="toggleDropdown(this)">
-    <p>¿Es gratis? ¿Tengo que pagar algo?</p>
+    <p class="titulo"><b>¿Es gratis? ¿Tengo que pagar algo?</b></p>
         <div class="dropdown">
             <p>
                 Nuestra web es totalmente gratuita. Puedes registrarte y navegar sin pagar absolutamente nada.
@@ -94,7 +95,7 @@
   </div>
 
   <div class="caja" onclick="toggleDropdown(this)">
-    <p>¿Qué condiciones hay para adoptar?</p>
+    <p class="titulo"><b>¿Qué condiciones hay para adoptar?</b></p>
         <div class="dropdown">
             <p>
                 Las condiciones para la adopción las pondrá cada autor. Al fin y al cabo, es la persona propietaria del animal.
@@ -105,7 +106,18 @@
   </div>
 
   <div class="caja" onclick="toggleDropdown(this)">
-    <p>¿Puedo enseñaros mi mascota?</p>
+    <p class="titulo"><b>¿Cómo puedo saber si la mascota que me interesa es compatible con mi estilo de vida y mi hogar?</b></p>
+        <div class="dropdown">
+            <p>
+                Los dueños de los anuncios publicados añadirán la información necesaria para que los usuarios interesados estén al tanto
+                de los cuidados y las necesidades que precisa la mascota. Pero si sigues teniendo dudas, podrás ponerte en contacto con ellos
+                para que puedan solucionartelas todas.
+            </p>
+        </div>
+  </div>
+
+  <div class="caja" onclick="toggleDropdown(this)">
+    <p class="titulo"><b>¿Puedo enseñaros mi mascota?</b></p>
         <div class="dropdown">
             <p>
             ¡Por supuesto! Si tienes mascotas adoptadas y quieres que la gente las conozca, ¡envíanos fotos!
@@ -114,6 +126,20 @@
             </p>
         </div>
   </div>
+
+  </div>
+
+    <br><br><br>
+    <h1>Contacta con nosotros</h1>
+    <br><br>
+
+    <br>
+    <div class="ayudaS">
+        <i>
+            Si tienes alguna duda o quieres compartir fotos de tu amigo, no dudes en ponerte en contacto con nosotros a traves de nuestro correo
+            en <b>belovedogsofficial@gmail.com</b> o por Instagram como <b>@belovedogs_official</b>. ¡Gracias por confiar en nosotros!
+        </i>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

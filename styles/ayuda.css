@@ -1,29 +1,52 @@
 h1 {
     text-align: center;
-    text-decoration: underline solid #e84855;
+    text-decoration: underline solid #ac0790;
+}
+
+.allBoxes {
+    background-color: #ac0790;
 }
 
 .caja {
-    border: 1px solid black;
+    border: 1px;
     padding: 10px;
-    
     cursor: pointer;
-    font-size: 150%;
-    background-color: #e84855;
+    font-size: 120%;
+    color: white;
+}
+
+.titulo {
+    font-style: inherit;
+    color: black;
 }
   
 .dropdown {
     display: none;
     margin-top: 10px;
     padding: 10px;
-    background-color: #e84855;
+    animation: fade-in 1.5s ease forwards;
 }
   
 .caja.clicked .dropdown {
     display: block;
 }
 
+.caja:not(.clicked) .dropdown {
+    animation-name: fade-out 1.5s ease forwards;
+}
+
 .ayudaS {
     display: flex;
-    font-size: 180%;
+    font-size: 150%;
+    text-align: center;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-out {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-10px); }
 }
