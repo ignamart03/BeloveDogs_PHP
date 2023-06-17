@@ -47,8 +47,6 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-sm-8">
-                <h2>Register</h2>
-                <h5>Fill the form to register, and click "Submit" when done</h5>
                 <?php
                 require_once 'connect.php';
                 // define variables and set to empty values
@@ -195,7 +193,7 @@ if (isset($_POST["Submit"])) {
     $password = $_POST["password"];
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-    $sql = "INSERT INTO USERS (`username`, `nombre_completo`, `email`, `direccion`, `telefono`, `password_hash`, `role_type`) VALUES ('$username','$name','$address','$email','$phone','$hashed_password', 'CLIENT')";
+    $sql = "INSERT INTO USERS (`username`, `nombre_completo`, `email`, `direccion`, `telefono`, `password_hash`, `role_type`) VALUES ('$username','$name','$email','$address','$phone','$hashed_password', 'CLIENT')";
     $sqlSearch = "SELECT * FROM `users` WHERE `username` LIKE '$username'";
 
 
@@ -207,7 +205,7 @@ if (isset($_POST["Submit"])) {
     //... if can make the user, alert it and redirect to user page. 
     else if (mysqli_query($conn, $sql)) {
         $_SESSION['sesion'] = $username;
-        echo "Usuario registrado con exito: $nombre);!" . "<script> window.location='profile.php' </script>";
+        echo "Usuario registrado con exito: $username);!";
     } else {
         echo "Error: " . $sql . "<br>" . mysql_error($conn);
     }

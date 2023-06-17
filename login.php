@@ -73,33 +73,24 @@
     <?php
     // put your code here
     require_once 'connect.php';
-    $username = "";
-    $email = "";
-    if (isset($_POST['Submit'])) {
-        $username = $_POST['username'];
-        $email = $_POST['email'];
-        $password = $_POST['password'];
 
-        $query = mysql_query("SELECT username FROM users WHERE username='$username' ");
-        $result2 = mysqli_query($conn, $query);
-
-        if (mysqli_num_rows($result2) > 0) {
-            header("Location: profile.php");
-            echo "hola";
-        }
-
-
-        $sql_g = "SELECT username FROM users WHERE username='$username'";
-        $sql_s = "SELECT * FROM users WHERE email='$email'";
-        $res_g = mysqli_query($conn, $sql_g);
-        $res_s = mysqli_query($conn, $sql_s);
-
-        if (mysqli_num_rows($res_g) < 0) {
-            echo "hola";
-        } else {
-
-            echo "Saved!";
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Obtener los datos del formulario
+        $username = $_POST["username"];
+        $password = $_POST["password"];
+    
+        // Consulta SQL para verificar los datos en la base de datos
+        $sql = "SELECT * FROM USERS WHERE username = '$username' AND password = '$password'";
+        $result = $conn->query($sql);
+    
+        if ($result->num_rows > 0) {
+            // Los datos son válidos, redirigir al usuario a home.php
+            $_SESSION["username"] = $username; // Guardar el nombre de usuario en la sesión si es necesario
+            header("Location: perfil.php");
             exit();
+        } else {
+            // Los datos son incorrectos, mostrar mensaje de error
+            echo "El usuario y/o la contraseña son incorrectos";
         }
     }
     ?>
