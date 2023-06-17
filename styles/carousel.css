@@ -20,18 +20,24 @@ body, html {
 
 
 .carousel-half-height {
-  height: 50vh; /* Ocupará solo la mitad del alto de la pantalla */
-  width: 50%; /* Ocupará la mitad de ancho de la pantalla */
+  height: 50vh; 
+  width: 50%; 
   position: fixed;
-  right: 0; /* Pegado al lado derecho */
-  top: 0; /* Pegado a la parte superior */
+  right: 0; 
+  top: 0; 
 }
 
 .carousel-2-item {
-  height: 50vh; /* El mismo alto que el contenedor del carrusel */
+  height: 50vh; 
 }
 
 .carousel-item img {
   object-fit: cover;
   height: 100%;
 }
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5); 
+  padding: 10px; 
+}
+

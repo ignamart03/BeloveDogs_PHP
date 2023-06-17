@@ -10,6 +10,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <!-- Bootstrap CSS -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
 
@@ -20,8 +21,7 @@ session_start();
         <a class="navbar-brand" href="home.php">
             <img src="favicon.ico" alt="Home" width="30" height="30">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -82,20 +82,20 @@ session_start();
             } else
 
                 if ($time >= "12" && $time < "16") {
-                    echo "Good afternoon, " . $row["name"];
-                } else
+                echo "Good afternoon, " . $row["name"];
+            } else
 
                     if ($time >= "16" && $time < "18") {
-                        echo "Hello, " . $row["name"] . ",it's tea time!";
-                    } else
+                echo "Hello, " . $row["name"] . ",it's tea time!";
+            } else
 
                         if ($time >= "18" && $time > "22") {
-                            echo "Good evening, " . $row["name"];
-                        } else
+                echo "Good evening, " . $row["name"];
+            } else
 
                             if (($time >= "22" && $time < "24") || ($time >= "0" && $time < "5")) {
-                                echo "Hello, " . $row["name"];
-                            }
+                echo "Hello, " . $row["name"];
+            }
 
             echo "<br>";
 
@@ -114,7 +114,7 @@ session_start();
     $cookie_name = "user";
     $cookie_value = $_POST["username"];
     setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day    
-    
+
     // define variables and set to empty values
     $username = $email = $gender = $password = $website = "";
     $usernameErr = $emailErr = $genderErr = $passwordErr = $websiteErr = "";
