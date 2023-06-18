@@ -159,3 +159,16 @@ h1 {
     height: 50px;
     cursor: pointer;
 }
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* ajusta este valor según tus necesidades */
+}
+
+.fab {
+    font-size: 2em;
+    color: #E1306C;
+    margin: 10px;
+}
