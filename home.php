@@ -27,7 +27,7 @@
           <a class="nav-link" href="adopta.php">Adopta</a>
         </li>
         <li class="nav-item">
-          <?php if (!isset($_SESSION['usuario'])) : ?>
+          <?php if (!isset($_SESSION['username'])) : ?>
             <a class="nav-link" href="login.php">Login</a>
           <?php endif; ?>
         </li>
