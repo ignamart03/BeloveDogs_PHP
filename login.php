@@ -93,7 +93,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container margin-top">
         <div class="row justify-content-center">
             <div class="col-sm-8">
                 <h2 class="mt-5 text-uppercase">Welcome</h2>

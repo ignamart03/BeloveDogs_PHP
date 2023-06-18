@@ -54,7 +54,7 @@ session_start();
         </div>
     </nav>
 
-    <div class="container mt-4">
+    <div class="container mt-4 margin-top">
         <h2 class="mb-4">Tienda</h2>
         <div class="row">
             <!-- Bucle for para simplificar la generación de las imágenes en la página -->

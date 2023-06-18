@@ -38,12 +38,19 @@
 
 .storeDiv {
     max-width: 600px;
+    margin: 30px;
 }
 
 .divsContainer {
-    position: fixed;
-    right: 10px;
+    position: absolute;
+    right: 0;
     bottom: 0;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C5CBD3;
 }
 
 @media only screen and (max-width: 800px) {
@@ -61,3 +68,6 @@
     }
 }
 
+.margin-top{
+    margin-top: 3%;
+}
