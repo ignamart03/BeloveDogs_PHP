@@ -1,6 +1,44 @@
 <?php
-//Start de session
 session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: home.php");
+    exit;
+}
+
+require_once 'connect.php';
+
+$username = $_SESSION['username'];
+$name = $_SESSION['name'];
+$email = $_SESSION['email'];
+$address = $_SESSION['address'];
+$phone = $_SESSION['phone'];
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $newName = test_input($_POST["name"]);
+    $newEmail = test_input($_POST["email"]);
+    $newAddress = test_input($_POST["address"]);
+    $newPhone = test_input($_POST["phone"]);
+
+    $sql = "UPDATE USERS SET `nombre_completo`='$newName', `email`='$newEmail', `direccion`='$newAddress', `telefono`='$newPhone' WHERE `username`='$username'";
+
+    if (mysqli_query($conn, $sql)) {
+        $_SESSION['name'] = $newName;
+        $_SESSION['email'] = $newEmail;
+        $_SESSION['address'] = $newAddress;
+        $_SESSION['phone'] = $newPhone;
+        echo "<script> alert('Datos actualizados correctamente.'); window.location='perfil.php'; </script>";
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+}
+
+function test_input($data)
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -62,7 +100,7 @@ session_start();
     $usernameErr = $emailErr = $genderErr = $passwordErr = $websiteErr = "";
     $name = $rpassword = $nameErr = "";
 
-    $sql = "SELECT `username`, `password_hash`, `email`, `nombre_completo` FROM USERS WHERE ('" . $_POST["username"] . "'= username AND '" . $_POST["password"] . "'= password_hash)";
+    $sql = "SELECT `username`, `password_hash`, `email`, `nombre_completo` FROM USERS WHERE ('" . $username . "'= username AND '" . $password . "'= password_hash)";
     //    echo $sql;
     $result = mysqli_query($conn, $sql);
 
@@ -112,7 +150,7 @@ session_start();
 
     <?php
     $cookie_name = "user";
-    $cookie_value = $_POST["username"];
+    $cookie_value = $username;
     setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day    
 
     // define variables and set to empty values
@@ -190,6 +228,8 @@ session_start();
         return $data;
     }
     ?>
+
+    
     <br>
     Please upload your profile photo.<br>
 
@@ -199,9 +239,6 @@ session_start();
         <input type="submit" value="Submit" name="submit"> <br>
     </form>
     <br>
-    <div class="visitor-count">
-        <?php include "counter.php"; ?>
-    </div>
     <br>
     <a href="logout.php">Logout</a>
 

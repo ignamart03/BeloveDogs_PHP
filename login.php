@@ -1,3 +1,7 @@
+<?php
+//Start de session
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +12,8 @@
     <!-- Bootstrap CSS -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JavaScript y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <link rel="stylesheet" href="styles/base.css">
 
 </head>
@@ -67,10 +73,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Bootstrap JavaScript y jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <?php
     // put your code here
     require_once 'connect.php';

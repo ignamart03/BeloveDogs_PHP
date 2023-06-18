@@ -1,17 +1,13 @@
 <?php
 
-	define('DBHOST', '127.0.0.1');
-	define('DBUSER', 'belovedogs');
-	define('DBPASS', 'belovedogs');
-	define('DBNAME', 'belovedogs');
-	
-	$conn = mysqli_connect(DBHOST,DBUSER,DBPASS,DBNAME);
+define('DBHOST', '127.0.0.1');
+define('DBUSER', 'belovedogs');
+define('DBPASS', 'belovedogs');
+define('DBNAME', 'belovedogs');
 
-      	
-	if ( !$conn ) {
-		die("Connection failure: " . mysqli_connect_error());
-	}
-        else echo "Connection succeeded!<br/>";
-        
-        ?>
+$conn = mysqli_connect(DBHOST, DBUSER, DBPASS, DBNAME);
 
+if (!$conn) {
+	die("Connection failure: " . mysqli_connect_error());
+}
+?>
