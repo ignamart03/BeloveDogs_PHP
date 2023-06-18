@@ -140,7 +140,7 @@ function test_input($data)
                     <a class="nav-link" href="shop.php">Tienda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="quienes.php">Quienes Somos</a>
+                    <a class="nav-link" href="quienes.php">About Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="ayuda.php">Ayuda</a>
