@@ -72,6 +72,20 @@
     margin-top: 3%;
 }
 
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-box {
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
 .fontWhite {
     color: white;
 }
