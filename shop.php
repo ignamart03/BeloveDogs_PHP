@@ -81,7 +81,7 @@ session_start();
 
             // Array de nombres de artículos
             $nombres = [
-                'Piscina para perros',
+                'La Cama Del Gato',
                 'Arnés K9',
                 'Fluffy Erizo',
                 'Fluffy Cocodrilo',
@@ -96,7 +96,8 @@ session_start();
                 'Seresto Antiparásitos',
                 'Rascador Hamiform',
                 'Rascador Fred & Rita',
-                'La Cama Del Gato'
+                'Piscina para perros'
+                
             ];
 
             for ($i = 1; $i <= 16; $i++) : ?>
