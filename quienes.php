@@ -130,7 +130,8 @@ session_start();
                 <div class="dropdown">
                     <p>
                         El portal web desarrollado en PHP proporciona una interfaz intuitiva y fácil de usar para los usuarios
-                        interesados en adoptar animales.
+                        interesados en adoptar animales. Pueden encontrar en un mismo lugar una gran cantidad de articulos, los mejores valorados
+                        de cada una de las mayores tiendas del país.
                     </p>
                 </div>
         </div>

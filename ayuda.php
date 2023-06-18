@@ -61,11 +61,12 @@ session_start();
     </nav>
 
     <br>
+   
     <div class="ayudaS margin-top">
         <i>
-            <p>¿No sabes bien como funciona BeloveDogs? Mira a ver si alguna de estas preguntas frecuentes soluciona tus dudas.
-                Si no es así, prueba a contactar con nosotros a través de nuestro correo electrónico o nuestra cuenta de Instagram;
-                o hazle unapregunta más concreta a nuestro ChatBot.</p>
+            <p><br>¿No sabes bien como funciona BeloveDogs? Mira a ver si alguna de estas preguntas frecuentes soluciona tus dudas.
+                Si no es así, prueba a contactar con nosotros a través de nuestro correo electrónico o nuestra cuenta de Instagram.
+            </p>
         </i>
     </div>
 
