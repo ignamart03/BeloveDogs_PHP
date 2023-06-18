@@ -1,27 +1,120 @@
-.bodyQ {
-    display: flex;
-}
-
-#textoQ {
-    flex: 1;
-    padding: 50px;
-}
-
 h1 {
-    font-size: 200%;
+    text-align: center;
+    text-decoration: underline solid #7C3626;
 }
 
-#namesD {
-    font-size: 170%;
+.allBoxes {
+    background-color: #7C3626;
+    padding: 20px; 
+    margin-left: 120px;
+    margin-right: 120px;
+    border-radius: 30px;
 }
 
-p {
-    font-size: 150%;
+.caja {
+    border: 1px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 120%;
+    color: white;
+    margin: 10px; 
+    border-radius: 10px; 
+    box-sizing: border-box; 
+}
+.titulo {
+    font-style: inherit;
+    color: black;
 }
 
-#imagenes {
+.dropdown {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    animation: fade-in 1.5s ease forwards;
+}
+
+.caja.clicked .dropdown {
+    display: block;
+}
+
+.caja:not(.clicked) .dropdown {
+    animation-name: fade-out 1.5s ease forwards;
+}
+
+.ayudaS {
     display: flex;
-    flex-direction: column;
+    font-size: 120%;
+    text-align: center;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+/*.container {
+    margin-top: 10%;
+  }
+  
+  .image-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .image-container img {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s;
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .image-container .overlay-text {
+    text-align: center;
+    font-size: 18px;
+  }*/
+
+  #imagenes {
+    display: flex;
+    flex-direction: row;
     padding: 20px;
     margin-right: 5%;
     margin-top: 5%;
@@ -29,10 +122,12 @@ p {
 
 .imagen {
     margin-bottom: 20px;
+    margin-left: 40px;
 }
 
 .imagen img {
-    max-width: 500px;
+    max-width: 400px;
+    height: 400px;
 }
 
 .imagen:hover {
