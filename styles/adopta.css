@@ -63,9 +63,91 @@ img {
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
+  background-color: #7C3626;
+  padding: 20px; 
+  margin-left: 120px;
+  margin-right: 120px;
+  border-radius: 30px;
+  max-width: calc(100% - 240px);
 }
 
 .buttons button {
   display: block;
   margin-bottom: 10px;
+  background-color: #7C3626;
+  color: white;
+  border-color: white;
+  border-radius: 30px;
+}
+
+
+.allBoxes {
+    background-color: #7C3626;
+    padding: 20px; 
+    margin-left: 120px;
+    margin-right: 120px;
+    border-radius: 30px;
+}
+
+.caja {
+    border: 1px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 120%;
+    color: white;
+    margin: 10px; 
+    border-radius: 10px; 
+    box-sizing: border-box; 
+}
+.titulo {
+    font-style: inherit;
+    color: black;
+}
+
+.dropdown {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    animation: fade-in 1.5s ease forwards;
+}
+
+.caja.clicked .dropdown {
+    display: block;
+}
+
+.caja:not(.clicked) .dropdown {
+    animation-name: fade-out 1.5s ease forwards;
+}
+
+.adopta-link {
+  color: white;
+}
+
+.adopta-link:hover{
+  color: black;
+}
+
+@keyframes fade-in {
+  0% {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fade-out {
+  from {
+      opacity: 1;
+      transform: translateY(0);
+  }
+
+  to {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
 }

@@ -105,7 +105,7 @@ session_start();
                 <img src="images/animales_salvajes.jpg" class="d-block w-100" alt="Imagen 4">
                 <div class="carousel-caption d-block">
                   <h5>Entrenamiento de animales salvajes</h5>
-                  <p>Especializacion entreamiento avanzado para cuidados veterinarios de animales salvajes</p>
+                  <p>Especializacion entreamiento avanzado para cuidados veSSterinarios de animales salvajes</p>
                   <a href="https://www.emagister.com/especializacion-entrenamiento-avanzado-para-cuidados-veterinarios-animales-salvajes-cursos-3461075.htm"
                     target="_blank">Ver más</a>
                 </div>
