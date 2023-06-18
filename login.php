@@ -1,5 +1,14 @@
 <?php
 session_start();
+require_once 'connect.php';
+function test_input($data)
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Obtener los datos del formulario de inicio de sesión
     $username = test_input($_POST["username"]);
@@ -31,20 +40,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Usuario no encontrado.";
     }
 }
-
-function test_input($data)
-{
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-}
 ?>
+
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>BeloveDogs · Inicia Sesión</title>
     <!-- Bootstrap CSS -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -58,7 +60,8 @@ function test_input($data)
         <a class="navbar-brand" href="home.php">
             <img src="favicon.ico" alt="Home" width="30" height="30">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -67,7 +70,7 @@ function test_input($data)
                     <a class="nav-link" href="adopta.php">Adopta</a>
                 </li>
                 <li class="nav-item">
-                    <?php if (!isset($_SESSION['username'])) : ?>
+                    <?php if (!isset($_SESSION['username'])): ?>
                         <a class="nav-link" href="login.php">Login</a>
                     <?php endif; ?>
                 </li>

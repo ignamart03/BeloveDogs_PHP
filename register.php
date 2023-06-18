@@ -105,7 +105,7 @@ function test_input($data)
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>regístrate</title>
+    <title>BeloveDogs · Regístrate</title>
     <!-- Bootstrap CSS -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/base.css">
