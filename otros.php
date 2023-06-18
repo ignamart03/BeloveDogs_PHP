@@ -12,6 +12,7 @@ session_start();
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/otros.css">
     <!-- Script -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -57,6 +58,196 @@ session_start();
             </ul>
         </div>
     </nav>
+
+    <!--<div>
+        <div class="cardC">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/adoptap1.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                <div class="flip-card-back">
+                    <h1>John Doe</h1>
+                    <p>Architect & Engineer</p>
+                    <p>We love that guy</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardC">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/adoptap1.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                <div class="flip-card-back">
+                    <h1>John asdasdasd</h1>
+                    <p>asdasdasd & Engineer</p>
+                    <p>We adadadad that guy</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardC">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/adoptap1.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                <div class="flip-card-back">
+                    <h1>John asdasdasd</h1>
+                    <p>asdasdasd & Engineer</p>
+                    <p>We adadadad that guy</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardC">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/adoptap1.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                <div class="flip-card-back">
+                    <h1>John Doe</h1>
+                    <p>Architect & Engineer</p>
+                    <p>We love that guy</p>
+                </div>
+            </div>
+        </div>
+    </div>-->
+<br><br><br><br><br>
+<h1>Otros usuarios</h1>
+<h3>¿Buscas gente con quien pasear? Encuentra a tu compañero amante de las mascotas</h3>
+<br>
+<div class="divC">
+<!-- Dividimos las flip cards en filas -->
+<div class="row">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/user.jpg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Usuario 1</h1> 
+        <p>Información 1</p> 
+        <p>Contacto 1</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/user.jpg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Usuario 2</h1> 
+        <p>Información 2</p> 
+        <p>Contacto 2</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/user.jpg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Usuario 3</h1> 
+        <p>Información 3</p> 
+        <p>Contacto 3</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Segunda fila de flip cards -->
+<div class="row">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/user.jpg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Usuario 4</h1> 
+        <p>Información 4</p> 
+        <p>Contacto 4</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/user.jpg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Usuario 5</h1> 
+        <p>Información 5</p> 
+        <p>Contacto 5</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/user.jpg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Usuario 6</h1> 
+        <p>Información 6</p> 
+        <p>Contacto 6</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/user.jpg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Usuario 1</h1> 
+        <p>Información 1</p> 
+        <p>Contacto 1</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/user.jpg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Usuario 2</h1> 
+        <p>Información 2</p> 
+        <p>Contacto 2</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/user.jpg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Usuario 3</h1> 
+        <p>Información 3</p> 
+        <p>Contacto 3</p>
+      </div>
+    </div>
+  </div>
+</div>
+                    </div>
+
+  <script src="scripts/otros.js"></script>
 </body>
 
 </html>
