@@ -1,3 +1,3 @@
 function toggleDropdown(element) {
-    element.classList.toggle('clicked');
-  }
+  element.classList.toggle('clicked');
+}
