@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,9 +32,7 @@
                     <?php if (!isset($_SESSION['username'])) : ?>
                         <a class="nav-link" href="login.php">Login</a>
                     <?php endif; ?>
-                    <?php if (isset($_SESSION['username'])) : ?>
-                        <a class="nav-link" href="logout.php">Logout</a>
-                    <?php endif; ?>
+                    
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="shop.php">Tienda</a>
