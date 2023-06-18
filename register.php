@@ -155,7 +155,7 @@ function test_input($data)
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container margin-top">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <h2 class="mt-4 mb-4">Registro de usuario</h2>

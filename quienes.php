@@ -18,7 +18,7 @@ session_start();
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body class="margin-top">
     <nav class="navbar navbar-expand-lg fixed-top">
         <a class="navbar-brand" href="home.php">
             <img src="favicon.ico" alt="Home" width="30" height="30">

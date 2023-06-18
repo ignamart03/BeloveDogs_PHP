@@ -60,7 +60,7 @@ session_start();
     </nav>
 
     <br>
-    <div class="ayudaS">
+    <div class="ayudaS margin-top">
         <i>
             ¿No sabes bien como funciona BeloveDogs? Mira a ver si alguna de estas preguntas frecuentes soluciona tus dudas.
             Si no es así, prueba a contactar con nosotros a través de nuestro correo electrónico o nuestra cuenta de Instagram;

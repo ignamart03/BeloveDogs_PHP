@@ -19,7 +19,7 @@ session_start();
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top nav-margin">
     <a class="navbar-brand" href="home.php">
       <img src="favicon.ico" alt="Home" width="30" height="30">
     </a>
@@ -195,28 +195,25 @@ session_start();
   </div>
 
   <!-- Cajas para las tiendas de artículos de mascotas -->
-  <div class="col-sm-6 divsContainer" style="position: fixed; right: 0; bottom: 0;">
-    <div class="container">
+  <div class="col-sm-6 divsContainer">
+    <div class="container divsTitle">
+      <h2 style="margin-top: 30px">¡Las mejores tiendas de Madrid!</h2>
       <div class="row rowDivs">
         <div class="storeDiv">
-          <h2>Las mejores tiendas de Madrid</h2>
-          <p>Nombre de la Tienda 1</p>
-          <a href="{Enlace de la tienda 1}">Visita nuestra tienda</a>
+          <h5>By Mascota 4.5/5⭐</h5>
+          <a href="https://www.expertoanimal.com/by-mascota-madrid-neg-7240.html">¡Visita nuestra tienda!</a>
           <div class="map">
-            <iframe src="{Enlace de Google Maps para la Tienda 1}" width="100%" height="300px" frameborder="0"
-              style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.358818631912!2d-3.6814389999999997!3d40.423052899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228a2b8460eff%3A0xc8d72c008724689c!2sCalle%20de%20Castell%C3%B3%2C%2010%2C%2028001%20Madrid!5e0!3m2!1ses!2ses!4v1687082479998!5m2!1ses!2ses" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
         </div>
         <div class="storeDiv">
-          <h2>Las mejores tiendas de Madrid</h2>
-          <p>Nombre de la Tienda 2</p>
-          <a href="{Enlace de la tienda 2}">Visita nuestra tienda</a>
+          <h5>PETuluku  4.3/5⭐</h5>
+          <a href="https://www.expertoanimal.com/petuluku-madrid-neg-7238.html">¡Visita nuestra tienda!</a>
           <div class="map">
-            <iframe src="{Enlace de Google Maps para la Tienda 2}" width="100%" height="300px" frameborder="0"
-              style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.004918002914!2d-3.7145182!3d40.43088999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228685cc4cdf3%3A0xecf993eab4a7494b!2sC.%20de%20Andr%C3%A9s%20Mellado%2C%204%2C%2028015%20Madrid!5e0!3m2!1ses!2ses!4v1687085261137!5m2!1ses!2ses" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
         </div>
-      </div>
+      </div>   
     </div>
   </div>
 </body>

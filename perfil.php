@@ -97,7 +97,7 @@ function test_input($data)
             </ul>
         </div>
     </nav>
-    <div class="container">
+    <div class="container margin-top">
         <div class="row justify-content-center">
             <div class="col-md-3">
                 <img class="profile-image" src="images/default.jpg" alt="Profile Image">
