@@ -176,22 +176,24 @@ session_start();
   </div>
 
   <!-- Cajas para las tiendas de artículos de mascotas -->
-  <div class="container">
-    <div class="row">
-      <div class="storeDiv" style="position: fixed; bottom: 0; right: 25%;">
-        <h2>Las mejores tiendas de Madrid</h2>
-        <p>Nombre de la Tienda 1</p>
-        <a href="{Enlace de la tienda 1}">Visita nuestra tienda</a>
-        <div class="map">
-          <iframe src="{Enlace de Google Maps para la Tienda 1}" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  <div class="col-sm-6 divsContainer" style="position: fixed; right: 0; bottom: 0;">
+    <div class="container">
+      <div class="row rowDivs">
+        <div class="storeDiv">
+          <h2>Las mejores tiendas de Madrid</h2>
+          <p>Nombre de la Tienda 1</p>
+          <a href="{Enlace de la tienda 1}">Visita nuestra tienda</a>
+          <div class="map">
+            <iframe src="{Enlace de Google Maps para la Tienda 1}" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
         </div>
-      </div>
-      <div class="storeDiv" style="position: fixed; bottom: 0; right: 0;">
-        <h2>Las mejores tiendas de Madrid</h2>
-        <p>Nombre de la Tienda 2</p>
-        <a href="{Enlace de la tienda 2}">Visita nuestra tienda</a>
-        <div class="map">
-          <iframe src="{Enlace de Google Maps para la Tienda 2}" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="storeDiv">
+          <h2>Las mejores tiendas de Madrid</h2>
+          <p>Nombre de la Tienda 2</p>
+          <a href="{Enlace de la tienda 2}">Visita nuestra tienda</a>
+          <div class="map">
+            <iframe src="{Enlace de Google Maps para la Tienda 2}" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
         </div>
       </div>
     </div>
