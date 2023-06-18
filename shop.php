@@ -15,12 +15,11 @@ session_start();
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="home.php">
             <img src="favicon.ico" alt="Home" width="30" height="30">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -29,10 +28,10 @@ session_start();
                     <a class="nav-link" href="adopta.php">Adopta</a>
                 </li>
                 <li class="nav-item">
-                    <?php if (!isset($_SESSION['username'])): ?>
+                    <?php if (!isset($_SESSION['username'])) : ?>
                         <a class="nav-link" href="login.php">Login</a>
                     <?php endif; ?>
-                    <?php if (isset($_SESSION['username'])): ?>
+                    <?php if (isset($_SESSION['username'])) : ?>
                         <a class="nav-link" href="logout.php">Logout</a>
                     <?php endif; ?>
                 </li>
@@ -55,7 +54,7 @@ session_start();
         </div>
     </nav>
 
-    <div class="container mt-4 margin-top">
+    <div class="container mt-4">
         <h2 class="mb-4">Tienda</h2>
         <div class="row">
             <!-- Bucle for para simplificar la generación de las imágenes en la página -->
@@ -100,17 +99,13 @@ session_start();
                 'La Cama Del Gato'
             ];
 
-            for ($i = 1; $i <= 16; $i++): ?>
+            for ($i = 1; $i <= 16; $i++) : ?>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="card">
-                        <img src="images/<?php echo $i; ?>.jpg" class="card-img-top image-container"
-                            alt="Imagen <?php echo $i; ?>">
+                        <img src="images/<?php echo $i; ?>.jpg" class="card-img-top image-container" alt="Imagen <?php echo $i; ?>">
                         <div class="card-body">
-                            <h5 class="card-title">
-                                <?php echo $nombres[$i - 1]; ?>
-                            </h5>
-                            <a href="<?php echo $enlaces[$i - 1]; ?>" target="_blank" class="btn btn-primary">Ir a
-                                producto</a>
+                            <h5 class="card-title"> <?php echo $nombres[$i - 1]; ?></h5>
+                            <a href="<?php echo $enlaces[$i - 1]; ?>" target="_blank" class="btn btn-primary">Ir a producto</a>
                         </div>
                     </div>
                 </div>
