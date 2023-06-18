@@ -32,7 +32,9 @@ session_start();
                     <a class="nav-link" href="adopta.php">Adopta</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.php">Login</a>
+                    <?php if (!isset($_SESSION['usuario'])) : ?>
+                        <a class="nav-link" href="login.php">Login</a>
+                    <?php endif; ?>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="shop.php">Tienda</a>
@@ -45,6 +47,9 @@ session_start();
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="otros.php">Conoce Otros Dueños</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="perfil.php">Perfil</a>
                 </li>
             </ul>
         </div>
@@ -81,11 +86,11 @@ session_start();
         // Obtener los datos del formulario
         $username = $_POST["username"];
         $password = $_POST["password"];
-    
+
         // Consulta SQL para verificar los datos en la base de datos
         $sql = "SELECT * FROM USERS WHERE username = '$username' AND password = '$password'";
         $result = $conn->query($sql);
-    
+
         if ($result->num_rows > 0) {
             // Los datos son válidos, redirigir al usuario a home.php
             $_SESSION["username"] = $username; // Guardar el nombre de usuario en la sesión si es necesario

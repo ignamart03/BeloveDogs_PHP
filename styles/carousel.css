@@ -27,6 +27,14 @@ body, html {
   top: 0; 
 }
 
+.divs-half-height {
+  height: 50vh; 
+  width: 50%; 
+  position: fixed;
+  right: 0; 
+  bottom: 0; 
+}
+
 .carousel-2-item {
   height: 50vh; 
 }
@@ -41,3 +49,12 @@ body, html {
   padding: 10px; 
 }
 
+.storeDiv {
+  position: relative;
+}
+
+@media only screen and (max-width: 992px) {
+  .storeDiv {
+    width: 100%;
+  }
+}

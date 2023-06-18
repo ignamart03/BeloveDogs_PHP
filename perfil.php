@@ -68,7 +68,9 @@ function test_input($data)
                     <a class="nav-link" href="adopta.php">Adopta</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.php">Login</a>
+                    <?php if (!isset($_SESSION['usuario'])) : ?>
+                        <a class="nav-link" href="login.php">Login</a>
+                    <?php endif; ?>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="shop.php">Tienda</a>
