@@ -1,4 +1,4 @@
-function changeImages(images) {
+/*function changeImages(images) {
     var imageContainer = document.getElementById('imageContainer');
     imageContainer.innerHTML = '';
 
@@ -10,6 +10,7 @@ function changeImages(images) {
         'images/adoptap2.jpg',
         'images/adoptap3.jpg',
         'images/adoptap4.jpg',
+        'images/juan.jpg',
       ];
     } else if (images === 'images2') {
       imagePaths = [
@@ -48,4 +49,13 @@ function changeImages(images) {
       imageContainer.appendChild(img);
       imageContainer.appendChild(txt);
     });
+  }*/
+
+  function showContainer(containerId) {
+    var containers = document.querySelectorAll('.container');
+    for (var i = 0; i < containers.length; i++) {
+      containers[i].classList.remove('show');
+    }
+    var containerToShow = document.querySelector('.' + containerId);
+    containerToShow.classList.add('show');
   }

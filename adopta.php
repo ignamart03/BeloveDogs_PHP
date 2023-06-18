@@ -11,6 +11,7 @@ session_start();
     <!-- Bootstrap CSS -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/adopta.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- JavaScript y jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -57,13 +58,186 @@ session_start();
         </div>
     </nav>
 
-<div class="buttons">
-    <button onclick="changeImages('images1')">Mostrar Imágenes 1</button>
-    <button onclick="changeImages('images2')">Mostrar Imágenes 2</button>
+<!--<div class="buttons">
+    <button onclick="changeImages('images1')">Nuestros perretes</button>
+    <button onclick="changeImages('images2')">Nuestros gatetes</button>
   </div>
 
   <div class="container" id="imageContainer">
+  </div>-->
+
+  <div class="buttons">
+    <button onclick="showContainer('container1')">Nuestros perretes</button>
+    <button onclick="showContainer('container2')">Nuestros gatetes</button>
   </div>
+
+  <div class="container" id="perretes">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="image-container">
+          <img src="images/adoptap1.jpg" alt="Imagen 1">
+          <div class="overlay">
+            <div class="overlay-text">Texto de la imagen 1</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="image-container">
+          <img src="images/adoptap2.jpg" alt="Imagen 2">
+          <div class="overlay">
+            <div class="overlay-text">Texto de la imagen 2</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="image-container">
+          <img src="images/adoptap3.jpg" alt="Imagen 3">
+          <div class="overlay">
+            <div class="overlay-text">Texto de la imagen 3</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="image-container">
+          <img src="images/adoptap4.jpg" alt="Imagen 4">
+          <div class="overlay">
+            <div class="overlay-text">Texto de la imagen 4</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Break -->
+    <div class="row">
+      <div class="col-md-3">
+        <div class="image-container">
+          <img src="images/adoptap2.jpg" alt="Imagen 1">
+          <div class="overlay">
+            <div class="overlay-text">Texto de la imagen 1</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="image-container">
+          <img src="images/adoptap2.jpg" alt="Imagen 2">
+          <div class="overlay">
+            <div class="overlay-text">Texto de la imagen 2</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="image-container">
+          <img src="images/adoptap2.jpg" alt="Imagen 3">
+          <div class="overlay">
+            <div class="overlay-text">Texto de la imagen 3</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="image-container">
+          <img src="images/adoptap2.jpg" alt="Imagen 4">
+          <div class="overlay">
+            <div class="overlay-text">Texto de la imagen 4</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Break -->
+    <div class="row">
+      <div class="col-md-3">
+        <div class="image-container">
+          <img src="images/adoptap1.jpg" alt="Imagen 1">
+          <div class="overlay">
+            <div class="overlay-text">Texto de la imagen 1</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="image-container">
+          <img src="images/adoptap2.jpg" alt="Imagen 2">
+          <div class="overlay">
+            <div class="overlay-text">Texto de la imagen 2</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="image-container">
+          <img src="images/adoptap3.jpg" alt="Imagen 3">
+          <div class="overlay">
+            <div class="overlay-text">Texto de la imagen 3</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="image-container">
+          <img src="images/adoptap4.jpg" alt="Imagen 4">
+          <div class="overlay">
+            <div class="overlay-text">Texto de la imagen 4</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Break -->
+    <div class="row">
+      <div class="col-md-3">
+        <div class="image-container">
+          <img src="images/adoptap1.jpg" alt="Imagen 1">
+          <div class="overlay">
+            <div class="overlay-text">Texto de la imagen 1</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="image-container">
+          <img src="images/adoptap2.jpg" alt="Imagen 2">
+          <div class="overlay">
+            <div class="overlay-text">Texto de la imagen 2</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="image-container">
+          <img src="images/adoptap3.jpg" alt="Imagen 3">
+          <div class="overlay">
+            <div class="overlay-text">Texto de la imagen 3</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="image-container">
+          <img src="images/adoptap4.jpg" alt="Imagen 4">
+          <div class="overlay">
+            <div class="overlay-text">Texto de la imagen 4</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--<div class="container container1">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="image-container">
+          <img src="images/adoptap1.jpg" alt="Imagen 1">
+          <div class="overlay">
+            <div class="overlay-text">Texto de la imagen 1</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>-->
+
+  <!--<div class="container container2">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="image-container">
+          <img src="images/adoptap2.jpg" alt="Imagen 5">
+          <div class="overlay">
+            <div class="overlay-text">Texto de la imagen 5</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>-->
 
     <script type="text/javascript" src="scripts/adopta.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
