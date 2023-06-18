@@ -12,7 +12,9 @@ session_start();
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
-
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -20,7 +22,8 @@ session_start();
         <a class="navbar-brand" href="home.php">
             <img src="favicon.ico" alt="Home" width="30" height="30">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -29,10 +32,10 @@ session_start();
                     <a class="nav-link" href="adopta.php">Adopta</a>
                 </li>
                 <li class="nav-item">
-                    <?php if (!isset($_SESSION['username'])) : ?>
+                    <?php if (!isset($_SESSION['username'])): ?>
                         <a class="nav-link" href="login.php">Login</a>
                     <?php endif; ?>
-                    <?php if (isset($_SESSION['username'])) : ?>
+                    <?php if (isset($_SESSION['username'])): ?>
                         <a class="nav-link" href="logout.php">Logout</a>
                     <?php endif; ?>
                 </li>
@@ -54,9 +57,6 @@ session_start();
             </ul>
         </div>
     </nav>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </body>
 
 </html>
