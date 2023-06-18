@@ -62,13 +62,12 @@ session_start();
     <br>
     <div class="ayudaS margin-top">
         <i>
-            ¿No sabes bien como funciona BeloveDogs? Mira a ver si alguna de estas preguntas frecuentes soluciona tus dudas.
+            <p>¿No sabes bien como funciona BeloveDogs? Mira a ver si alguna de estas preguntas frecuentes soluciona tus dudas.
             Si no es así, prueba a contactar con nosotros a través de nuestro correo electrónico o nuestra cuenta de Instagram;
-            o hazle unapregunta más concreta a nuestro ChatBot.
+            o hazle unapregunta más concreta a nuestro ChatBot.</p>
         </i>
     </div>
 
-    <br><br>
     <h1>Preguntas Frecuentes</h1>
     <br><br>
 
@@ -140,10 +139,8 @@ session_start();
 
   </div>
 
-    <br><br><br>
+  <br>
     <h1>Contacta con nosotros</h1>
-    <br><br>
-
     <br>
     <div class="ayudaS">
         <i>

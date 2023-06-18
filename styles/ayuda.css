@@ -1,10 +1,14 @@
 h1 {
     text-align: center;
-    text-decoration: underline solid #ac0790;
+    text-decoration: underline solid #7C3626;
 }
 
 .allBoxes {
-    background-color: #ac0790;
+    background-color: #7C3626;
+    padding: 20px; 
+    margin-left: 120px;
+    margin-right: 120px;
+    border-radius: 30px;
 }
 
 .caja {
@@ -13,8 +17,10 @@ h1 {
     cursor: pointer;
     font-size: 120%;
     color: white;
+    margin: 10px; 
+    border-radius: 10px; 
+    box-sizing: border-box; 
 }
-
 .titulo {
     font-style: inherit;
     color: black;
@@ -37,8 +43,10 @@ h1 {
 
 .ayudaS {
     display: flex;
-    font-size: 150%;
+    font-size: 120%;
     text-align: center;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 
 @keyframes fade-in {
