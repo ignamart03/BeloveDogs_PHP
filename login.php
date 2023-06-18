@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once 'connect.php';
+
 function test_input($data)
 {
     $data = trim($data);
@@ -34,14 +35,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: perfil.php");
             exit;
         } else {
-            echo "Contraseña incorrecta.";
+            $errorMessage = "Contraseña incorrecta.";
         }
     } else {
-        echo "Usuario no encontrado.";
+        $errorMessage = "Usuario no encontrado.";
     }
 }
+
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -55,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="styles/base.css">
 </head>
 
-<body>
+<body class="login-body" >
     <nav class="navbar navbar-expand-lg fixed-top">
         <a class="navbar-brand" href="home.php">
             <img src="favicon.ico" alt="Home" width="30" height="30">
@@ -93,29 +97,45 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </nav>
 
-    <div class="container margin-top">
-        <div class="row justify-content-center">
-            <div class="col-sm-8">
-                <h2 class="mt-5 text-uppercase">Welcome</h2>
-                <h5 class="text-uppercase">Please, log in to continue</h5>
-                <form action="perfil.php" method="post">
-                    <div class="form-group">
-                        <label for="usuario" class="text-uppercase">Username:</label>
-                        <input type="text" id="usuario" name="username" value="" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="pwd" class="text-uppercase">Password:</label>
-                        <input type="password" id="pwd" name="password" value="" class="form-control">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+    <div class="container">
+        <div class="login-box">
+            <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                <div class="form-group">
+                    <label for="uname">Username *</label>
+                    <span class="error">
+                        <?php echo isset($usernameErr) ? $usernameErr : ""; ?>
+                    </span><br>
+                    <input type="text" id="uname" name="username" placeholder="Your user name here"
+                        value="<?php echo isset($username) ? $username : ""; ?>">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password *</label>
+                    <span class="error">
+                        <?php echo isset($passwordErr) ? $passwordErr : ""; ?>
+                    </span><br>
+                    <input type="password" name="password" id="password" placeholder="********" required />
+                </div>
                 <div class="mt-3">
+                    <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
                     <p class="text-uppercase">¿No tienes cuenta?</p>
                     <a href="register.php" class="btn btn-secondary">¡Regístrate!</a>
                 </div>
-            </div>
+                <?php
+                if (isset($errorMessage)) {
+                    echo '<div class="mt-3 alert alert-danger">' . $errorMessage . '</div>';
+                }
+                ?>
+            </form>
+            <?php
+            if (isset($errorMessage)) {
+                echo '<div class="mt-3 alert alert-danger">' . $errorMessage . '</div>';
+            }
+            ?>
         </div>
     </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
