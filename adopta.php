@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once 'connect.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +26,8 @@ session_start();
         <a class="navbar-brand" href="home.php">
             <img src="favicon.ico" alt="Home" width="30" height="30">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -34,10 +36,10 @@ session_start();
                     <a class="nav-link" href="adopta.php">Adopta</a>
                 </li>
                 <li class="nav-item">
-                    <?php if (!isset($_SESSION['username'])) : ?>
+                    <?php if (!isset($_SESSION['username'])): ?>
                         <a class="nav-link" href="login.php">Login</a>
                     <?php endif; ?>
-                    <?php if (isset($_SESSION['username'])) : ?>
+                    <?php if (isset($_SESSION['username'])): ?>
                         <a class="nav-link" href="logout.php">Logout</a>
                     <?php endif; ?>
                 </li>
@@ -98,209 +100,54 @@ session_start();
     </div>
 
     <div class="container" id="perretes">
-        <div class="row  d-flex align-items-center justify-content-center ">
-            <div class="col-md-3 mx-3">
-                <div class="image-container">
-                    <img src="images/adoptap1.jpg" alt="Imagen 1">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <ul>
-                                <li>Nombre:</li>
-                                <li>Edad:</li>
-                                <li>Raza:</li>
-                                <li>Centro:</li>
-                            </ul>
-                            <button>¡Adóptame!</button>
+        <?php
+        // Realizar la consulta a la base de datos
+        $sql = "SELECT nombre_mascota, edad, raza, dueño
+        FROM mascota
+        WHERE dueño = 'BeloveDogs'
+        ORDER BY edad ASC, nombre_mascota ASC";
+        $result = mysqli_query($conn, $sql);
+
+        $index = 0; // Índice para acceder a los elementos de imágenes
+        
+        for ($i = 0; $i < 4; $i++) {
+            echo '<div class="row d-flex align-items-center justify-content-center">';
+
+            for ($j = 0; $j < 3; $j++) {
+                // Obtener los datos de la mascota actual
+                $row = mysqli_fetch_assoc($result);
+                $nombreMascota = $row['nombre_mascota'];
+                $edad = $row['edad'];
+                $raza = $row['raza'];
+                $centro = $row['dueño'];
+
+                echo '<div class="col-md-3 mx-3">
+                    <div class="image-container">
+                        <img src="images/adoptap'.($index + 1).'.jpg" alt="Imagen 2">
+                        <div class="overlay">
+                            <div class="overlay-text">
+                                <ul>
+                                    <li>Nombre: ' . $nombreMascota . '</li>
+                                    <li>Edad: ' . $edad . '</li>
+                                    <li>Raza: ' . $raza . '</li>
+                                    <li>Centro: ' . $centro . '</li>
+                                </ul>
+                                <button>¡Adóptame!</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-3 mx-3">
-                <div class="image-container">
-                    <img src="images/adoptap2.jpg" alt="Imagen 2">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <ul>
-                                <li>Nombre:</li>
-                                <li>Edad:</li>
-                                <li>Raza:</li>
-                                <li>Centro:</li>
-                            </ul>
-                            <button>¡Adóptame!</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mx-3">
-                <div class="image-container">
-                    <img src="images/adoptap3.jpg" alt="Imagen 3">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <ul>
-                                <li>Nombre:</li>
-                                <li>Edad:</li>
-                                <li>Raza:</li>
-                                <li>Centro:</li>
-                            </ul>
-                            <button>¡Adóptame!</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Break -->
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-md-3 mx-3">
-                <div class="image-container">
-                    <img src="images/adoptap2.jpg" alt="Imagen 1">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <ul>
-                                <li>Nombre:</li>
-                                <li>Edad:</li>
-                                <li>Raza:</li>
-                                <li>Centro:</li>
-                            </ul>
-                            <button>¡Adóptame!</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mx-3">
-                <div class="image-container">
-                    <img src="images/adoptap2.jpg" alt="Imagen 2">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <ul>
-                                <li>Nombre:</li>
-                                <li>Edad:</li>
-                                <li>Raza:</li>
-                                <li>Centro:</li>
-                            </ul>
-                            <button>¡Adóptame!</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mx-3">
-                <div class="image-container">
-                    <img src="images/adoptap2.jpg" alt="Imagen 3">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <ul>
-                                <li>Nombre:</li>
-                                <li>Edad:</li>
-                                <li>Raza:</li>
-                                <li>Centro:</li>
-                            </ul>
-                            <button>¡Adóptame!</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Break -->
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-md-3 mx-3">
-                <div class="image-container">
-                    <img src="images/adoptap1.jpg" alt="Imagen 1">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <ul>
-                                <li>Nombre:</li>
-                                <li>Edad:</li>
-                                <li>Raza:</li>
-                                <li>Centro:</li>
-                            </ul>
-                            <button>¡Adóptame!</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mx-3">
-                <div class="image-container">
-                    <img src="images/adoptap2.jpg" alt="Imagen 2">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <ul>
-                                <li>Nombre:</li>
-                                <li>Edad:</li>
-                                <li>Raza:</li>
-                                <li>Centro:</li>
-                            </ul>
-                            <button>¡Adóptame!</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mx-3">
-                <div class="image-container">
-                    <img src="images/adoptap3.jpg" alt="Imagen 3">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <ul>
-                                <li>Nombre:</li>
-                                <li>Edad:</li>
-                                <li>Raza:</li>
-                                <li>Centro:</li>
-                            </ul>
-                            <button>¡Adóptame!</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Break -->
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-md-3 mx-3">
-                <div class="image-container">
-                    <img src="images/adoptap1.jpg" alt="Imagen 1">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <ul>
-                                <li>Nombre:</li>
-                                <li>Edad:</li>
-                                <li>Raza:</li>
-                                <li>Centro:</li>
-                            </ul>
-                            <button>¡Adóptame!</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mx-3">
-                <div class="image-container">
-                    <img src="images/adoptap2.jpg" alt="Imagen 2">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <ul>
-                                <li>Nombre:</li>
-                                <li>Edad:</li>
-                                <li>Raza:</li>
-                                <li>Centro:</li>
-                            </ul>
-                            <button>¡Adóptame!</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mx-3">
-                <div class="image-container">
-                    <img src="images/adoptap3.jpg" alt="Imagen 3">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <ul>
-                                <li>Nombre:</li>
-                                <li>Edad:</li>
-                                <li>Raza:</li>
-                                <li>Centro:</li>
-                            </ul>
-                            <button>¡Adóptame!</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                 </div>';
+
+                $index++; // Incrementar el índice para obtener la siguiente imagen
+            }
+            echo '</div>';
+        }
+
+        // Liberar memoria y cerrar la conexión a la base de datos
+        mysqli_free_result($result);
+        ?>
+
+
     </div>
 
     <script type="text/javascript" src="scripts/adopta.js"></script>
