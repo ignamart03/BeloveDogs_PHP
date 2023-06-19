@@ -132,8 +132,8 @@ require_once 'connect.php';
                                     <li>Raza: ' . $raza . '</li>
                                     <li>Centro: ' . $centro . '</li>
                                 </ul>
-                                <button>
-                                <a href="https://ajuntament.barcelona.cat/benestaranimal/es/centro-de-acogida-de-animales-de-compania-caacb" class="adopta-link" target="_blank">¡Adóptame!</a>
+                                <button class="button">
+                                <a href="https://ajuntament.barcelona.cat/benestaranimal/es/centro-de-acogida-de-animales-de-compania-caacb" class="adopta-link button-adopta" target="_blank">¡Adóptame!</a>
                                 </button>
                             </div>
                         </div>

@@ -71,6 +71,10 @@ img {
   max-width: calc(100% - 240px);
 }
 
+.button {
+  border-radius: 30px;
+}
+
 .buttons button {
   display: block;
   margin-bottom: 10px;
@@ -126,6 +130,14 @@ img {
 
 .adopta-link:hover{
   color: black;
+}
+
+.button-adopta {
+  color: black;
+}
+
+.button-adopta:hover {
+  color: #7C3626;
 }
 
 @keyframes fade-in {
