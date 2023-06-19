@@ -97,7 +97,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container container-login">
+    <h1>Iniciar sesión</h1>
+
         <div class="login-box">
             <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                 <div class="form-group">

@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once 'connect.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,8 +14,11 @@ session_start();
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/adopta.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
     <!-- JavaScript y jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="scripts/ayuda.js"></script>
 </head>
 
 <body>
@@ -58,120 +62,95 @@ session_start();
         </div>
     </nav>
 
-  <div class="buttons">
-    <button onclick="showContainer('container1')">Nuestros perretes</button>
-    <button onclick="showContainer('container2')">Nuestros gatetes</button>
-  </div>
+    <div class="buttons">
+        <div class="caja" onclick="toggleDropdown(this)">
+            <p class="titulo"><b>Más centros de adopción</b></p>
+            <div class="dropdown">
+                <ul>
+                    <li>
+                        <a href="https://elrefugio.org/" class="adopta-link" target="_blank">El Refugio, MAD</a>
+                    </li>
+                    <li>
+                        <a href="https://galgoespanolespana.org/" class="adopta-link" target="_blank">Asociación Galgo, MAD</a>
+                    </li>
+                    <li>
+                        <a href="https://www.helpguau.com/" class="adopta-link" target="_blank">Help Guau, BAR</a>
+                    </li>
+                    <li>
+                        <a href="http://www.propatas.es/" class="adopta-link" target="_blank">Propatas Protectora, VALL</a>
+                    </li>
+                    <li>
+                        <a href="https://www.petjadestrobades.es/" class="adopta-link" target="_blank">Petjades Trobades, VALE</a>
+                    </li>
+                    <li>
+                        <a href="https://ajuntament.barcelona.cat/benestaranimal/es/centro-de-acogida-de-animales-de-compania-caacb" class="adopta-link">CAACB, BAR</a>
+                    </li>
+                    <li>
+                        <a href="https://fapam.org/" class="adopta-link" target="_blank">FAPAM, MAD</a>
+                    </li>
+                    <li>
+                        <a href="https://asociacion-proccan.org/" class="adopta-link" target="_blank">PROCCAN, BAR</a>
+                    </li>
+                    <li>
+                        <a href="https://albaonline.org/" class="adopta-link" target="_blank">Asociación Alba, MAD</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-  <div class="container" id="perretes">
-    <div class="row  d-flex align-items-center justify-content-center ">
-      <div class="col-md-3 mx-3">
-        <div class="image-container">
-          <img src="images/adoptap1.jpg" alt="Imagen 1">
-          <div class="overlay">
-            <div class="overlay-text">Texto de la imagen 1</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mx-3">
-        <div class="image-container">
-          <img src="images/adoptap2.jpg" alt="Imagen 2">
-          <div class="overlay">
-            <div class="overlay-text">Texto de la imagen 2</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mx-3">
-        <div class="image-container">
-          <img src="images/adoptap3.jpg" alt="Imagen 3">
-          <div class="overlay">
-            <div class="overlay-text">Texto de la imagen 3</div>
-          </div>
-        </div>
-      </div>
+    <div class="container" id="perretes">
+        <?php
+        // Realizar la consulta a la base de datos
+        $sql = "SELECT nombre_mascota, edad, raza, dueño
+        FROM mascota
+        WHERE dueño = 'BeloveDogs'
+        ORDER BY edad ASC, nombre_mascota ASC";
+        $result = mysqli_query($conn, $sql);
+
+        $index = 0; // Índice para acceder a los elementos de imágenes
+        
+        for ($i = 0; $i < 4; $i++) {
+            echo '<div class="row d-flex align-items-center justify-content-center">';
+
+            for ($j = 0; $j < 3; $j++) {
+                // Obtener los datos de la mascota actual
+                $row = mysqli_fetch_assoc($result);
+                $nombreMascota = $row['nombre_mascota'];
+                $edad = $row['edad'];
+                $raza = $row['raza'];
+                $centro = $row['dueño'];
+
+                echo '<div class="col-md-3 mx-3">
+                    <div class="image-container">
+                        <img src="images/adoptap'.($index + 1).'.jpg" alt="Imagen 2">
+                        <div class="overlay">
+                            <div class="overlay-text">
+                                <ul>
+                                    <li>Nombre: ' . $nombreMascota . '</li>
+                                    <li>Edad: ' . $edad . '</li>
+                                    <li>Raza: ' . $raza . '</li>
+                                    <li>Centro: ' . $centro . '</li>
+                                </ul>
+                                <button class="button">
+                                <a href="https://ajuntament.barcelona.cat/benestaranimal/es/centro-de-acogida-de-animales-de-compania-caacb" class="adopta-link button-adopta" target="_blank">¡Adóptame!</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                 </div>';
+
+                $index++; // Incrementar el índice para obtener la siguiente imagen
+            }
+            echo '</div>';
+        }
+
+        // Liberar memoria y cerrar la conexión a la base de datos
+        mysqli_free_result($result);
+        ?>
+
+
     </div>
-    <!-- Break -->
-    <div class="row d-flex align-items-center justify-content-center">
-      <div class="col-md-3 mx-3">
-        <div class="image-container">
-          <img src="images/adoptap2.jpg" alt="Imagen 1">
-          <div class="overlay">
-            <div class="overlay-text">Texto de la imagen 1</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mx-3">
-        <div class="image-container">
-          <img src="images/adoptap2.jpg" alt="Imagen 2">
-          <div class="overlay">
-            <div class="overlay-text">Texto de la imagen 2</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mx-3">
-        <div class="image-container">
-          <img src="images/adoptap2.jpg" alt="Imagen 3">
-          <div class="overlay">
-            <div class="overlay-text">Texto de la imagen 3</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Break -->
-    <div class="row d-flex align-items-center justify-content-center">
-      <div class="col-md-3 mx-3">
-        <div class="image-container">
-          <img src="images/adoptap1.jpg" alt="Imagen 1">
-          <div class="overlay">
-            <div class="overlay-text">Texto de la imagen 1</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mx-3">
-        <div class="image-container">
-          <img src="images/adoptap2.jpg" alt="Imagen 2">
-          <div class="overlay">
-            <div class="overlay-text">Texto de la imagen 2</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mx-3">
-        <div class="image-container">
-          <img src="images/adoptap3.jpg" alt="Imagen 3">
-          <div class="overlay">
-            <div class="overlay-text">Texto de la imagen 3</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Break -->
-    <div class="row d-flex align-items-center justify-content-center">
-      <div class="col-md-3 mx-3">
-        <div class="image-container">
-          <img src="images/adoptap1.jpg" alt="Imagen 1">
-          <div class="overlay">
-            <div class="overlay-text">Texto de la imagen 1</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mx-3">
-        <div class="image-container">
-          <img src="images/adoptap2.jpg" alt="Imagen 2">
-          <div class="overlay">
-            <div class="overlay-text">Texto de la imagen 2</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mx-3">
-        <div class="image-container">
-          <img src="images/adoptap3.jpg" alt="Imagen 3">
-          <div class="overlay">
-            <div class="overlay-text">Texto de la imagen 3</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
     <script type="text/javascript" src="scripts/adopta.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

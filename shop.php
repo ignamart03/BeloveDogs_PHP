@@ -61,7 +61,7 @@ session_start();
             <?php
             // Array de enlaces
             $enlaces = [
-                'https://www.kiwoko.com/perros/accesorios-para-perros/juguetes-para-perros/summer-vibes-piscina-para-perros/SMV58901_M.html',
+                'https://www.bigberthaoriginal.es/products/la-cama-del-gato-cama-para-gatos-pompon-vison?currency=EUR&utm_medium=cpc&utm_source=google&utm_campaign=Google+Shopping&gclid=CjwKCAjws7WkBhBFEiwAIi16877oemGl6W-sDXTC0h4PcFK_jWRDjGInzddj9FYSLgGBLULRVV10axoCtcMQAvD_BwE&variant=15155388547115',
                 'https://www.kiwoko.com/perros/accesorios-para-perros/julius-k9-idc-arnes-ergonomigo-negro-para-perros/JULJ16779_M.html',
                 'https://www.kiwoko.com/peluches/fluffy-erizo-de-peluche-para-perros/FLF70448_M.html',
                 'https://www.kiwoko.com/peluches/fluffy-canvas-cocodrilo-de-peluche-para-perros/FLF16447_M.html',
@@ -76,8 +76,9 @@ session_start();
                 'https://www.miscota.es/gatos/seresto/seresto-collar-32599',
                 'https://www.elcorteingles.es/mascotas/MP_0012933_0006R-rascador-hamiform-para-gatos-gaya/?parentCategoryId=999.20999304013&color=Blanco%20%2F%20Gris',
                 'https://www.elcorteingles.es/mascotas/A44191011-rascador-fred-and-rita-para-gatos-coche-amarillo-de-carton/?parentCategoryId=999.20999376013&color=Amarillo',
-                'https://www.bigberthaoriginal.es/products/la-cama-del-gato-cama-para-gatos-pompon-vison?currency=EUR&utm_medium=cpc&utm_source=google&utm_campaign=Google+Shopping&gclid=CjwKCAjws7WkBhBFEiwAIi16877oemGl6W-sDXTC0h4PcFK_jWRDjGInzddj9FYSLgGBLULRVV10axoCtcMQAvD_BwE&variant=15155388547115'
+                'https://www.kiwoko.com/perros/accesorios-para-perros/juguetes-para-perros/summer-vibes-piscina-para-perros/SMV58901_M.html',
             ];
+            
 
             // Array de nombres de artículos
             $nombres = [
