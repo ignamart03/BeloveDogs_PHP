@@ -68,31 +68,31 @@ require_once 'connect.php';
             <div class="dropdown">
                 <ul>
                     <li>
-                        <a href="" class="adopta-link">El Refugio, MAD</a>
+                        <a href="https://elrefugio.org/" class="adopta-link" target="_blank">El Refugio, MAD</a>
                     </li>
                     <li>
-                        <a href="" class="adopta-link">Asociación Galgo, MAD</a>
+                        <a href="https://galgoespanolespana.org/" class="adopta-link" target="_blank">Asociación Galgo, MAD</a>
                     </li>
                     <li>
-                        <a href="" class="adopta-link">Help Guau, BAR</a>
+                        <a href="https://www.helpguau.com/" class="adopta-link" target="_blank">Help Guau, BAR</a>
                     </li>
                     <li>
-                        <a href="" class="adopta-link">Propatas Protectora, VALL</a>
+                        <a href="http://www.propatas.es/" class="adopta-link" target="_blank">Propatas Protectora, VALL</a>
                     </li>
                     <li>
-                        <a href="" class="adopta-link">Petjades Trobades, VALE</a>
+                        <a href="https://www.petjadestrobades.es/" class="adopta-link" target="_blank">Petjades Trobades, VALE</a>
                     </li>
                     <li>
-                        <a href="" class="adopta-link">CAAC, BAR</a>
+                        <a href="https://ajuntament.barcelona.cat/benestaranimal/es/centro-de-acogida-de-animales-de-compania-caacb" class="adopta-link">CAACB, BAR</a>
                     </li>
                     <li>
-                        <a href="" class="adopta-link">FAPAM, MAD</a>
+                        <a href="https://fapam.org/" class="adopta-link" target="_blank">FAPAM, MAD</a>
                     </li>
                     <li>
-                        <a href="" class="adopta-link">PROCCAN, BAR</a>
+                        <a href="https://asociacion-proccan.org/" class="adopta-link" target="_blank">PROCCAN, BAR</a>
                     </li>
                     <li>
-                        <a href="" class="adopta-link">Asociación Alba, MAD</a>
+                        <a href="https://albaonline.org/" class="adopta-link" target="_blank">Asociación Alba, MAD</a>
                     </li>
                 </ul>
             </div>
