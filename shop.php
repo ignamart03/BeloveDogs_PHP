@@ -78,6 +78,7 @@ session_start();
                 'https://www.elcorteingles.es/mascotas/A44191011-rascador-fred-and-rita-para-gatos-coche-amarillo-de-carton/?parentCategoryId=999.20999376013&color=Amarillo',
                 'https://www.kiwoko.com/perros/accesorios-para-perros/juguetes-para-perros/summer-vibes-piscina-para-perros/SMV58901_M.html',
             ];
+            
 
             // Array de nombres de artículos
             $nombres = [
