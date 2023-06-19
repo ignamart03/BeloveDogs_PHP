@@ -192,7 +192,7 @@ function test_input($data)
                     </div>
                     <div class="form-group">
                         <label for="phone">Teléfono:</label>
-                        <input type="text" class="form-control" id="phone" name="phone" value="<?php echo $phone; ?>">
+                        <input type="number" class="form-control" id="phone" name="phone" value="<?php echo $phone; ?>">
                         <span class="text-danger">
                             <?php echo $phoneErr; ?>
                         </span>
